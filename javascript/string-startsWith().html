@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript Strings</h2>
+        <p>Check if a string starts with "Hello, world!"</p>
+
+        <p id = "demo"></p>
+
+        <p id = "demoOne"></p>
+
+        <p id = "demoTwo"></p>
+
+        <p id = "demoThree"></p>
+
+        <p>The startsWith() method is not supported in Internet Explorer.</p>
+
+        <script>
+            let text = "Hello world, welcome to the universe.";   
+            document.getElementById("demo").innerHTML = text.startsWith("Hello");
+            document.getElementById("demoOne").innerHTML = text.startsWith("world");
+            document.getElementById("demoTwo").innerHTML = text.startsWith("world", 5);
+            document.getElementById("demoThree").innerHTML = text.startsWith("world", 6);
+        </script>
+    </body>
+</html>
