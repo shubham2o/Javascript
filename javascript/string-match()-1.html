@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript String Search</h2>
+        <p>Perform a global, case-insensitive search for "ain":</p>
+        <p id="demo"></p>
+
+        <script>
+            let text = "The rain in SPAIN stays mainly in the pain";
+            document.getElementById("demo").innerHTML = text.match(/ain/gi);
+        </script>
+    </body>
+</html>
