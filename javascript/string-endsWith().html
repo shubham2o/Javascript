@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript Strings</h2>
+        <p>Check if a string ends with "Doe":</p>
+        
+        <p id ="demo"></p>
+
+        <p id ="demoOne"></p>
+
+        <p id ="demoTwo"></p>
+
+        <p id ="demoThree"></p>
+
+        <p>The endsWith() method is not supported in Internet Explorer.</p>
+
+        <script>
+            let text = "John Doe";
+            document.getElementById("demo").innerHTML = text.endsWith("Doe");
+
+            let textOne = "Hello world, welcome to the universe";
+            document.getElementById("demoOne").innerHTML = textOne.endsWith("world", 11);
+        </script>
+    </body>
+</html>
