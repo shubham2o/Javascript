@@ -17,6 +17,12 @@
         <p>The setDate() method sets the day of a date Object:</p>
         <p id = "demoDate"></p> 
 
+        <!-- SET HOURS -->
+        <h2>Javascript setHour()</h2>
+        <p>The setHours() method sets the hour of a date Object:</p>
+        <p id = "demoHours"></p>
+
+
         <script>
             // SET FULL YEAR
             const year = new Date();
@@ -31,6 +37,11 @@
             // SET DATE
             const date = new Date();
             document.getElementById("demoDate").innerHTML = date;
+
+            // SET HOURS
+            const hours = new Date ();
+            hours.setHours(22)
+            document.getElementById("demoHours").innerHTML = hours;
         </script>
     </body>
 </html>
