@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript Array.reduce()</h2>
+        <p>This example finds the sum of all numbers in an array:</p>
+        <p id = "demo"></p>
+
+        <script>
+            const numbers = [45, 4, 9, 16, 25];
+            let sum = numbers.reduce(myFunction);
+
+            document.getElementById("demo").innerHTML = sum;
+
+            function myFunction(total, value, index, array) {
+                return total + value;
+            }
+        </script>
+    </body>
+</html>
