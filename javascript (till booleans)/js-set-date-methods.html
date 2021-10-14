@@ -4,13 +4,25 @@
         <!-- SET FULL YEAR -->
         <h2>Javascript setFullYear()</h2>
         <p>The setFullYear() method sets the year of a date object:</p>
-        <p id = "demo"></p>
+        <p id = "demoYear"></p>
+
+        <!-- SET MONTH -->
+        <h2>JavaScript setMonth()</h2>
+        <p>The setMonth() method sets the month of a date object:</p>
+        <p>Note that months count from 0. December is month 11:</p>
+        <p id = "demoMonth"></p>
+
 
         <script>
             // SET FULL YEAR
             const year = new Date();
             year.setFullYear(2020);
-            document.getElementById("demo").innerHTML = year;
+            document.getElementById("demoYear").innerHTML = year;
+
+            //SET MONTHS
+            const month = new Date();
+            month.setMonth(11);
+            document.getElementById("demoMonth").innerHTML = month;
         </script>
     </body>
 </html>
