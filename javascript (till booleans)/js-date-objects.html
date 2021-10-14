@@ -26,6 +26,13 @@
         <h2>Javascript getMinutes()</h2>
         <p>The getMinutes() method returns the minutes of a date as a number (0-59):</p>
         <p id = "demoMin"></p>
+
+        <!-- GET SECONDS -->
+        <h2>Javascript getSeconds()</h2>
+        <p>The getSeconds() method returns the seconds of a date as a number (0-59):</p>
+        <p id = "demoSeconds"></p>
+
+
         <script>
             // GET FULL YEAR
             const year = new Date();
@@ -46,6 +53,10 @@
             // GET MINUTES
             const min = new Date();
             document.getElementById("demoMin").innerHTML = min.getMinutes();
+
+            // GET MINUTES
+            const sec = new Date();
+            document.getElementById("demoSeconds").innerHTML = sec.getSeconds();
         </script>
     </body>
 </html>
