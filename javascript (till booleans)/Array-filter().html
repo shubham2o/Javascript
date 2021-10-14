@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript Array.filter()</h2>
+        <p>Creates a new array with all array elements that passes a test.</p>
+        <p id = "demo"></p>
+
+        <script>
+            const numbers1 = [45, 4, 9, 16, 25];
+            const over18 = numbers1.filter(myFunction);
+
+            document.getElementById("demo").innerHTML = over18;
+
+            function myFunction(value) {
+                return value > 18;
+            }
+        </script>
+    </body>
+</html>
