@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript Array.findIndex()</h2>
+        <p id = "demo"></p>
+
+        <script>
+            const numbers = [4, 9, 16, 25, 29];
+
+            document.getElementById("demo").innerHTML = numbers.findIndex(myFunction);
+
+            function myFunction(value) {
+                return value > 18;
+            }
+        </script>
+    </body>
+</html>
