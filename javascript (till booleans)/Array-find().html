@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript Array.find()</h2>
+        <p id = "demo"></p>
+        
+        <script>
+            const numbers = [4, 9, 16, 32, 64];
+            let first = numbers.find(myFunction);
+
+            document.getElementById("demo").innerHTML = first;
+
+            function myFunction(value) {
+                return value > 18; 
+            }
+        </script>
+    </body>
+</html>
