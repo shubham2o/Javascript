@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <h2>Javascript Array.indexOf</h2>
+    <p id = "demo"></p>
+
+    <script>
+        const fruits = ["Apple", "Orange", "Apple", "Mango"];
+        let position = fruits.indexOf("Apple") + 1;     /*If the item is present more than once, 
+                                                        it returns the position of the first occurrence.*/
+
+        document.getElementById("demo").innerHTML = position;
+    </script>
+</html>
