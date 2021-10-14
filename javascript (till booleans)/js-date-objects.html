@@ -12,6 +12,11 @@
         <p>To get the correct month, you must add 1:</p>
         <p id = "demoMonth"></p>
 
+        <!-- GET DATE -->
+        <h2>Javascript getDate()</h2>
+        <p>The getDate() method returns the day of a date as a number (1-31):</p>
+        <p id = "demoDate"></p>
+    
         <script>
             // GET FULL YEAR
             const year = new Date();
@@ -20,6 +25,10 @@
             // GET MONTH
             const month = new Date();
             document.getElementById("demoMonth").innerHTML = month.getMonth() + 1;
+
+            // GET DATE
+            const date = new Date();
+            document.getElementById("demoDate").innerHTML = date.getDate();
         </script>
     </body>
 </html>
