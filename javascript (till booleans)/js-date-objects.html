@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <!-- GET FULL YEAR -->
         <h2>Javascript getFullYear()</h2>
         <p>The getFullYear() method returns the full year of a date:</p>
-        <p id = "demoyear"></p>
+        <p id = "demoYear"></p>
+
+        <!-- GET MONTH -->
+        <h2>Javascript getMonth()</h2>
+        <p>The getMonth() method returns the month of a date as a number from 0 to 11.</p>
+        <p>To get the correct month, you must add 1:</p>
+        <p id = "demoMonth"></p>
 
         <script>
+            // GET FULL YEAR
             const year = new Date();
-            document.getElementById("demoyear").innerHTML = year.getFullYear();
+            document.getElementById("demoYear").innerHTML = year.getFullYear();
+
+            // GET MONTH
+            const month = new Date();
+            document.getElementById("demoMonth").innerHTML = month.getMonth() + 1;
         </script>
     </body>
 </html>
