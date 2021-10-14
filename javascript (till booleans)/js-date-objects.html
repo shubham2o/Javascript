@@ -16,7 +16,16 @@
         <h2>Javascript getDate()</h2>
         <p>The getDate() method returns the day of a date as a number (1-31):</p>
         <p id = "demoDate"></p>
-    
+
+        <!-- GET HOURS -->
+        <h2>Javascript getHours()</h2>
+        <p>The getHours() method returns the hours of a date as a number (0-23):</p>
+        <p id = "demoHours"></p>
+
+        <!-- GET MINUTES -->
+        <h2>Javascript getMinutes()</h2>
+        <p>The getMinutes() method returns the minutes of a date as a number (0-59):</p>
+        <p id = "demoMin"></p>
         <script>
             // GET FULL YEAR
             const year = new Date();
@@ -29,6 +38,14 @@
             // GET DATE
             const date = new Date();
             document.getElementById("demoDate").innerHTML = date.getDate();
+
+            // GET HOURS
+            const hours = new Date();
+            document.getElementById("demoHours").innerHTML = hours.getHours();
+
+            // GET MINUTES
+            const min = new Date();
+            document.getElementById("demoMin").innerHTML = min.getMinutes();
         </script>
     </body>
 </html>
