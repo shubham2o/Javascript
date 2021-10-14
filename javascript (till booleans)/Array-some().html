@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript Array.some()</h2>
+        <p>The some() method checks if some array values pass a test.</p>
+        <p id = "demo"></p>
+
+        <script>
+            const number =[45, 4, 9, 16, 25];
+            let sum = number.some(myFunction);
+
+            document.getElementById("demo").innerHTML = sum;
+
+            function myFunction(value) {
+                return value > 18;
+            }
+        </script>
+    </body>
+</html>
