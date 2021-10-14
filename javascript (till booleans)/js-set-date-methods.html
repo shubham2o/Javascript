@@ -22,6 +22,10 @@
         <p>The setHours() method sets the hour of a date Object:</p>
         <p id = "demoHours"></p>
 
+        <!-- SET MINUTES -->
+        <h2>Javascript setMinutes()</h2>
+        <p>The setMinutes() method sets the minutes of a date Object (0-59):</p>
+        <p id = "demoMin"></p>
 
         <script>
             // SET FULL YEAR
@@ -42,6 +46,12 @@
             const hours = new Date ();
             hours.setHours(22)
             document.getElementById("demoHours").innerHTML = hours;
+
+            //SET MINUTES
+            const minutes = new Date ();
+            minutes.setMinutes(30);
+            document.getElementById("demoMin").innerHTML = minutes;
+
         </script>
     </body>
 </html>
