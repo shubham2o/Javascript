@@ -12,6 +12,10 @@
         <p>Note that months count from 0. December is month 11:</p>
         <p id = "demoMonth"></p>
 
+        <!-- SET DATE -->
+        <h2>Javascript setDate()</h2>
+        <p>The setDate() method sets the day of a date Object:</p>
+        <p id = "demoDate"></p> 
 
         <script>
             // SET FULL YEAR
@@ -23,6 +27,10 @@
             const month = new Date();
             month.setMonth(11);
             document.getElementById("demoMonth").innerHTML = month;
+
+            // SET DATE
+            const date = new Date();
+            document.getElementById("demoDate").innerHTML = date;
         </script>
     </body>
 </html>
