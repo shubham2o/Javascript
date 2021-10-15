@@ -6,6 +6,7 @@
         <p>Using Map.has()</p>
         <p id = "demoHas"></p>
 
+        <p id = "demoHasDelete"></p>
         <script>
             const fruits = new Map([
                 ["apples", 500],
@@ -13,6 +14,16 @@
                 ["oranges", 200]
             ]);
             document.getElementById("demoHas").innerHTML = fruits.has("apples");
+
+
+            const cars = new Map([
+                ["BMW", 500],
+                ["Audi", 250],
+                ["Tesla", 250],
+                ["Mercedes", 400]
+            ]);
+            fruits.delete("Audi");
+            document.getElementById("demoHasDelete").innerHTML = fruits.has("Audi");
         </script>
     </body>
 </html>
