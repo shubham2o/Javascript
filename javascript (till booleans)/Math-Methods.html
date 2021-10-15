@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!-- MATH ROUND() -->
+        <h2>Javascript Math.round()</h2>
+        <p>Math.round(x) returns the value of x rounded to its nearest integer:</p>
+        <p id = "demoRound"></p>
+
+        <!-- MATH CEIL() -->
+        <h2>Javascript Math.ceil()</h2>
+        <p>Math.ceil(x) rounds a number up to its nearest integer:</p>
+        <p id = "demoCeil"></p>
+
+        <!-- MATH FLOOR() -->
+        <h2>Javascript Math.floor()</h2>
+        <p>Math.floor(x) returns the value of x rounded down to its nearest integer:</p>
+        <p id = "demoFloor"></p>
+
+        <!-- MATH TRUNC() -->
+        <h2>Javascript Math.trunc()</h2>
+        <p>Math.trunc(x) returns the integer part of x:</p>
+        <p id = "demoTrunc"></p>
+
+        <!-- MATH SIGN() -->
+        <h2>Javascript Math.sign()</h2>
+        <p>Math.sign(x) returns if x is negative, null or positive:</p>
+        <p id = "demoSignOne"></p>
+        <p id = "demoSignTwo"></p>
+        <p id = "demoSignThree"></p>
+
+
+        <script>
+            // MATH ROUND()
+            document.getElementById("demoRound").innerHTML = Math.round(4.4); 
+
+            // MATH CEIL()
+            document.getElementById("demoCeil").innerHTML = Math.ceil(4.4);
+
+            // MATH FLOOR()
+            document.getElementById("demoFloor").innerHTML = Math.floor(4.7);
+
+            // MATH TRUNC()
+            document.getElementById("demoTrunc").innerHTML = Math.trunc(4.7);
+
+            // MATH SIGN()
+            document.getElementById("demoSignOne").innerHTML = Math.sign(4);
+            document.getElementById("demoSignTwo").innerHTML = Math.sign(0);
+            document.getElementById("demoSignThree").innerHTML = Math.sign(-4);
+        </script>
+    </body>
+</html>
