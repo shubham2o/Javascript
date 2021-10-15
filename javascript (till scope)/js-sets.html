@@ -11,6 +11,11 @@
         <p>Add values to a Set:</p>
         <p id = "demoSetValues"></p>
 
+        <!-- Add Method -->
+        <h2>Add method()</h2>
+        <p>Adding new elements to a Set:</p>
+        <p id = "demoAdd"></p>
+
 
         <script>
             // New Set Method
@@ -23,6 +28,12 @@
             lettersOne.add("b");
             lettersOne.add("c");
             document.getElementById("demoSetValues").innerHTML = lettersOne.size;
+
+            // Add Method
+            const lettersAdd = new Set(["a", "b", "c", "d"]);
+            lettersAdd.add("d");
+            lettersAdd.add("e");
+            document.getElementById("demoAdd").innerHTML = lettersAdd.size;
         </script>
     </body>
 </html>
