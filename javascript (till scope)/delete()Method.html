@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <h2>JavaScript Maps</h2>
+    <p>Deleting Map elements:</p>
+    <p id = "demoDelete"></p>
+
+    <script>
+        const fruits = new Map([
+            ["apples", 500],
+            ["bananas", 250],
+            ["oranges", 200]
+        ]);
+        fruits.delete("apples");
+        document.getElementById("demoDelete").innerHTML = fruits.size;
+    </script>
+</html>
