@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <h2>Javascript For Of Loop</h2>
+    <p>The for of statement loops through the values of any iterabḻe object:</p>
+    <p id = "demoForOf"></p>
+
+    <script>
+        const cars = ["BMW", "Volvo", "Mini"];
+
+        let text = "";
+        for (let x of cars) {
+            text += x + "<br>";
+        }
+        document.getElementById("demoForOf").innerHTML = text;
+    </script>
+</html>
