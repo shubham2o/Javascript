@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html>
+    <!-- LOOPING OVER AN ARRAY -->
     <h2>Javascript For Of Loop</h2>
     <p>The for of statement loops through the values of any iterabḻe object:</p>
     <p id = "demoForOf"></p>
 
-    <script>
-        const cars = ["BMW", "Volvo", "Mini"];
+    <!-- LOOPING OVER A STRING -->
+    <h2>Javascript For Of Loop</h2>
+    <p>The for of statement loops through the values of an iterable object.</p>
+    <p id = "demoForOfString"></p>
 
+
+    <script>
+        // LOOPING OVER AN ARRAY
+        const cars = ["BMW", "Volvo", "Mini"];
         let text = "";
         for (let x of cars) {
             text += x + "<br>";
         }
         document.getElementById("demoForOf").innerHTML = text;
+
+        // LOOPING OVER A STRING
+        let language = "JavaScript";
+        let textOne = "";
+        for (let x of language) {
+            textOne += x + "<br>";
+        }
+        document.getElementById("demoForOfString").innerHTML = textOne;
     </script>
 </html>
