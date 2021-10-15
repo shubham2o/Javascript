@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>The JavaScript String() Method</h2>
+        <p>The String() method can convert a number to a string.</p>
+        <p id = "demoString"></p>
+        
+        <!-- toString() -->
+        <p>The toString() method converts a number to a string.</p>
+        <p id = "demotoString"></p>
+
+
+        <script>
+            let x = 456;
+            document.getElementById("demoString").innerHTML = 
+            String(x) + "<br>" + 
+            String(456) + "<br>" +
+            String(400 + 56);
+
+
+            // toString()
+            let z = 456;
+            document.getElementById("demotoString").innerHTML =
+            z.toString() + "<br>" + 
+            (456).toString() + "<br>" +
+            (400 + 56).toString();
+        </script>
+    </body>
+</html>
