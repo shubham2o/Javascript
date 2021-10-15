@@ -11,6 +11,14 @@
         <p>A time-based greeting:</p>
         <p id = "demoElse"></p>
 
+        <!-- Javascript Else if -->
+        <h2>Javascript Else...if</h2>
+        <p>If time is less than 10:00, create a "Good morning" greeting, 
+            if not, but time is less than 20:00, create a "Good day" greeting, 
+            otherwise a "Good evening":
+        </p>
+        <p id = "demoElseIf"></p>
+
 
         <script>
             // Javascript If
@@ -18,12 +26,25 @@
                 document.getElementById("demoIf").innerHTML = "Good day!";
             }
 
+
             // Javascript Else
             if (new Date().getHours() < 18) {
                 document.getElementById("demoElse").innerHTML = "Good day!";
             }
             else {
                 document.getElementById("demoElse").innerHTML = "Good evening!";
+            }
+
+
+            // Javascript Else if
+            if (new Date().getHours() < 10) {
+                document.getElementById("demoElseIf").innerHTML = "Good morning!";
+            }
+            else if (new Date(),getHours() < 20) {
+                document.getElementById("demoElseIf").innerHTML = "Good day!";
+            }
+            else {
+                document.getElementById("demoElseIf").innerHTML = "Good evening!";
             }
         </script>
     </body>
