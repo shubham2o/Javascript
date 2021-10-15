@@ -6,9 +6,24 @@
         <p>Display "Good day!" if the hour is less than 18:00 :-</p>
         <p id = "demoIf">Good Evening!</p>
 
+        <!-- Javascript Else -->
+        <h2>JavaScript if...Else</h2>
+        <p>A time-based greeting:</p>
+        <p id = "demoElse"></p>
+
+
         <script>
+            // Javascript If
             if (new Date().getHours() < 18) {
                 document.getElementById("demoIf").innerHTML = "Good day!";
+            }
+
+            // Javascript Else
+            if (new Date().getHours() < 18) {
+                document.getElementById("demoElse").innerHTML = "Good day!";
+            }
+            else {
+                document.getElementById("demoElse").innerHTML = "Good evening!";
             }
         </script>
     </body>
