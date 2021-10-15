@@ -54,8 +54,28 @@
         <p>Math.cos(x) returns the cosline (a value between -1 and 1) of the angle x (given in radians).</p>
         <p id = "demoCos"></p>
 
+        <!-- MATH MIN() -->
+        <h2>JavaScript Math.min()</h2>
+        <p>Math.min(x) returns the lowest value in a list of arguements:</p>
+        <p id = "demoMin"></p>
 
-        <script>
+        <!-- MATH MAX() -->
+        <h2>JavaScript Math.max()</h2>
+        <p>Math.min(x) returns the highest value in a list of arguements:</p>
+        <p id = "demoMax"></p>
+
+        <!-- MATH RANDOM() -->
+        <h2>JavaScript Math.random()</h2>
+        <p>Math.random() returns a random number between 0 (inclusive), and 1 (exclusive).</p>
+        <p id = "demoRandom"></p>
+
+        <!-- MATH LOG() -->
+        <h2>JavaScript Math.log()</h2>
+        <p>Math.log() returns the natural logarithm of x:</p>
+        <p id = "demoLog"></p>
+
+
+            <script>
             // MATH ROUND()
             document.getElementById("demoRound").innerHTML = Math.round(4.4); 
 
@@ -87,6 +107,18 @@
 
             // MATH COS()
             document.getElementById("demoCos").innerHTML = Math.cos(0 * Math.PI / 180);
+
+            // MATH MIN()
+            document.getElementById("demoMin").innerHTML = Math.min(0, 158, 20, -8, -200);
+
+            // MATH MAX()
+            document.getElementById("demoMax").innerHTML = Math.max(0, 158, 20, -8, -200);
+
+            // MATH RANDOM()
+            document.getElementById("demoRandom").innerHTML = Math.random();
+
+            // MATH LOG()
+            document.getElementById("demoLog").innerHTML = Math.log(1);
         </script>
     </body>
 </html>
