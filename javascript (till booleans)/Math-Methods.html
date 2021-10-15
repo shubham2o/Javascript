@@ -28,6 +28,32 @@
         <p id = "demoSignTwo"></p>
         <p id = "demoSignThree"></p>
 
+        <!-- MATH POW() -->
+        <h2>Javascript Math.pow()</h2>
+        <p>Math.pow(x,y) returns the value of x to the power of y:</p>
+        <p id = "demoPow"></p>
+
+        <!-- MATH SQRT() -->
+        <h2>Javascript Math.sqrt()</h2>
+        <p>Math.sqrt() returns the square root of x:</p>
+        <p id = "demoSqrt"></p>
+
+        <!-- MATH ABS() -->
+        <h2>Math.abs()</h2>
+        <p>Math.abs(x) returns the absolute(positive) value of x:</p>
+        <p id = "demoAbs"></p>
+
+        <!-- MATH SIN() -->
+        <h2>JavaScript Math.sin()</h2>
+        <p>Math.sin(x) returns the sin of x (given in radians):</p>
+        <p>Angle in radians = (angle in degrees) * PI/180.</p>
+        <p id = "demoSin"></p>
+
+        <!-- MATH COS() -->
+        <h2>JavaScript Math.cos()</h2>
+        <p>Math.cos(x) returns the cosline (a value between -1 and 1) of the angle x (given in radians).</p>
+        <p id = "demoCos"></p>
+
 
         <script>
             // MATH ROUND()
@@ -46,6 +72,21 @@
             document.getElementById("demoSignOne").innerHTML = Math.sign(4);
             document.getElementById("demoSignTwo").innerHTML = Math.sign(0);
             document.getElementById("demoSignThree").innerHTML = Math.sign(-4);
+
+            // MATH POW()
+            document.getElementById("demoPow").innerHTML = Math.pow(8,2);
+
+            // MATH SQRT()
+            document.getElementById("demoSqrt").innerHTML = Math.sqrt(64);
+
+            // MATH ABS()
+            document.getElementById("demoAbs").innerHTML = Math.abs(-4.7);
+
+            //MATH SIN()
+            document.getElementById("demoSin").innerHTML = Math.sin(90 * Math.PI / 180);
+
+            // MATH COS()
+            document.getElementById("demoCos").innerHTML = Math.cos(0 * Math.PI / 180);
         </script>
     </body>
 </html>
