@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>The has() Method</h2>
+        <p>The has() method returns true if a key exists in a Map:</p>
+        <p>Using Map.has()</p>
+        <p id = "demoHas"></p>
+
+        <script>
+            const fruits = new Map([
+                ["apples", 500],
+                ["bananas", 250],
+                ["oranges", 200]
+            ]);
+            document.getElementById("demoHas").innerHTML = fruits.has("apples");
+        </script>
+    </body>
+</html>
