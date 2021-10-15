@@ -6,10 +6,23 @@
         <p>Create a Set from an Array:</p>
         <p id = "demoNewSet"></p>
 
+        <!-- Create a set and add values -->
+        <h2>Javascript Sets</h2>
+        <p>Add values to a Set:</p>
+        <p id = "demoSetValues"></p>
+
+
         <script>
             // New Set Method
             const letters = new Set(["a", "b", "c"]);
             document.getElementById("demoNewSet").innerHTML = letters.size;
+
+            // Create a set and add values
+            const lettersOne = new Set();
+            lettersOne.add("a");
+            lettersOne.add("b");
+            lettersOne.add("c");
+            document.getElementById("demoSetValues").innerHTML = lettersOne.size;
         </script>
     </body>
 </html>
