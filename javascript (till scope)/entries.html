@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript Map Objects</h2>
+        <p>Using Map.entries():</p>
+        <p id = "demoEntries"></p>
+
+        <script>
+            const fruits = new Map([
+                ["apples", 500],
+                ["bananas", 250],
+                ["oranges", 200]
+            ]);
+            let text = "";
+            for (const x of fruits.entries()) {
+                text += x + "<br>";
+            }
+            document.getElementById("demoEntries").innerHTML = text;
+        </script>
+    </body>
+</html>
