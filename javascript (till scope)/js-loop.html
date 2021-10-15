@@ -4,15 +4,25 @@
         <h2>Javascript For Loop</h2>
         <p id ="demoLoop"></p>
 
+        <!-- The For Loop -->
+        <h2>Javascript For Loop</h2>
+        <p id ="demoFor"></p>
+
+
         <script>
             const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
-
             let text = "";
             for (let i = 0; i < cars.length; i++) {
                 text += cars[i] + "<br>";
             }
-
             document.getElementById("demoLoop").innerHTML = text;
+
+            // The For Loop
+            let textFor = "";
+            for (let i = 0; i < 5; i++) {
+                textFor += "The number is " + i + "<br>";
+            }
+            document.getElementById("demoFor").innerHTML = textFor;
         </script>
     </body>
 </html>
