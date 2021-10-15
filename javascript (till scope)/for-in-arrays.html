@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript For In</h2>
+        <p>The for in statement can loops over array values:</p>
+        <p id = "demoForIn"></p>
+
+        <script>
+            const numbers = [45, 4, 9, 16, 25];
+
+            let text = "";
+            for (let x  in numbers) {
+                text += numbers[x] + "<br>";
+            }
+            document.getElementById("demoForIn").innerHTML = text;
+        </script>
+    </body>
+</html>
