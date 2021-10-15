@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>The set() Method</h2>
+        <p>You can add elements to a Map with the set() method:</p>
+        <p>Using Map.set()</p>
+        <p id = "demoSet"></p>
+
+        <script>
+            const fruits = new Map();
+            fruits.set("apples", 500);
+            fruits.set("mango", 250);
+            fruits.set("oranges", 200);
+            document.getElementById("demoSet").innerHTML = fruits.get("apples");
+        </script>
+    </body>
+</html>
