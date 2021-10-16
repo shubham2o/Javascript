@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>this in a Method</h2>
+        <p>In an object method, this refers to the "owner" of the method.</p>
+        <p>In this example, this represents the person object.</p>
+        <p>Because the person object "owns" the fullName method.</p>
+        <p id = "demoThis"></p>
+
+        <script>
+            const person = {
+                firstName : "John",
+                lastName : "Doe",
+                id : "5566",
+                fullName : function() {
+                    return this.firstName + " " + this.lastName;
+                }
+            };
+
+            document.getElementById("demoThis").innerHTML = person.fullName();
+        </script>
+    </body>
+</html>
