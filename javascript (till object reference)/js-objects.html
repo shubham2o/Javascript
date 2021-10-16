@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <!-- STRING -->
         <h2>JavaScript Objects</h2>
         <p>Display object properties:</p>
-        <p id = "demo"></p>
+        <p id = "demoString"></p>
+
+        <!-- LOOP -->
+        <h2>JavaScript Objects</h2>
+        <p>Display object properties:</p>
+        <p id = "demoLoop"></p>
+
 
         <script>
+            // STRING
             const person = {
                 name : "John",
                 age : 36,
                 city : "San Francisco"
             };
-            document.getElementById("demo").innerHTML = 
+            document.getElementById("demoString").innerHTML = 
             person.name + ", " + person.age + ", " + person.city;
+
+            // LOOP
+            const personLoop = {
+                name : "John",
+                age : 36,
+                city : "San Francisco"
+            };
+            let text = "";
+            for (let x in person) {
+                text += person[x] + " ";
+            };
+            document.getElementById("demoLoop").innerHTML = text;
         </script>
     </body>
 </html>
