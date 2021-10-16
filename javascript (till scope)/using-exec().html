@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Using exec()</h2>
+        <p>The exec() method is a RegExp expression method.</p>
+        <p>It searches a string for a specified pattern, and returns the found text as an object.</p>
+        <p>If no match is found, it returns an empty (null) object.</p>
+        <p id = "demo">The best things in life are free!</p>
+        <p id = "demoExec"></p>
+
+        <script>
+            const obj = document.getElementById("demo").innerHTML;
+            const pattern = /e/;
+            document.getElementById("demoExec").innerHTML = pattern.exec(obj);
+        </script>
+    </body>
+</html>
