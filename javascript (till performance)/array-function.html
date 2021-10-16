@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!-- BEFORE -->
+        <h2>Javascript Function</h2>
+        <p>This example shows the syntax of a function, without the use of arrow function syntax.</p>
+        <h4>BEFORE</h4>
+        <p id ="demoBefore"></p>
+
+        <!-- AFTER -->
+        <h2>Javascript Arrow Function</h2>
+        <p>This example shows the syntax of an Arrow Function, and how to use it.</p>
+        <h4>AFTER</h4>
+        <p id ="demoAfter"></p>
+
+
+        <script>
+            // BEFORE
+            var hello;
+            hello = function() {
+                return "Hello World!";
+            }
+            document.getElementById("demoBefore").innerHTML = hello();
+
+            // AFTER
+            var hi;
+            hi = () => {
+                return "Hi World!";
+            }
+            document.getElementById("demoAfter").innerHTML = hi();
+        </script>
+    </body>
+</html>
