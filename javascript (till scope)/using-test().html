@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Using test()</h2>
+        <p>The test() method is a RegExp expression method.</p>
+        <p>It searches a string for a pattern, and returns true or false, depending on the result.</p>
+        <p>Search for an "e" in the next paragraph:</p>
+        <p id = "demo">The best things in life are free!</p>
+        <p id = "demoTest"></p>
+
+        <script>
+            let text = document.getElementById("demo").innerHTML;
+            const pattern = /e/;
+            document.getElementById("demoTest").innerHTML = pattern.test(text);
+        </script>
+    </body>
+</html>
