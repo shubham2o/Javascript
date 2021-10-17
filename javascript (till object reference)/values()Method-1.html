@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Values() Method</h2>
+        <p>Javascript Sets</p>
+        <p>Iterating Set values:</p>
+        <p id = "demo"></p>
+
+        <script>
+            const letters = new Set(["a", "b", "c"]);
+            let text = "";
+            for (const x of letters.values()) {
+                text += x + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        </script>
+    </body>
+</html>
