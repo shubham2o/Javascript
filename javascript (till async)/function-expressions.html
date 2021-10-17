@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Function Expressions</h2>
+        <p>A JavaScript function can also be defined using an expression.</p>
+        <p>A function expression can be stored in a variable:</p>
+        <p id = "demo"></p>
+        <br>
+        <p>After a function has been stored in a variable, the variable can be used as a function:</p>
+        <p id = "demoOne"></p>
+
+
+        <script>
+            const x = function (a,b) {return a * b};
+            document.getElementById("demo").innerHTML = x;
+            document.getElementById("demoOne").innerHTML = x(4,5);
+        </script>
+    </body>
+</html>
