@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Arguments Length (not arGUEments !!!)</h2>
+        <p>The arguments.length property returns the number of arguments received by the function:</p>
+        <p id = "demo"></p>
+
+        <script>
+            function myFunction(a, b, c, d) {
+                return arguments.length;
+            }
+            document.getElementById("demo").innerHTML = myFunction(4, 5, 6, 7);
+        </script>
+    </body>
+</html>
