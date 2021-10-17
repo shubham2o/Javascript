@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>new Map()</h2>
+        <p>You can create a Map by passing an Array to the new Map() constructor:</p>
+        <p id = "demo"></p>
+
+        <script>
+            const fruits = new Map ([
+            ["apples", 500],
+            ["bananas", 270],
+            ["oranges", 250]
+        ]);
+        document.getElementById("demo").innerHTML = fruits.get("apples");
+        </script>
+    </body>
+</html>
