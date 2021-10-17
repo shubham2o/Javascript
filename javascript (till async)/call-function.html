@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>The JavaScript call() Method</h2>
+        <p>The call() method is predefined JavaScript method.</p>
+        <p>It can be used to invoke (call) a method with an owner object as an argument (parameter).</p>
+        <p id = "demo"></p>
+
+        <script>
+            const person = {
+                fullName : function() {
+                    return this.firstName + " " + this.lastName;
+                }
+            }
+            const person1 = {
+                firstName : "John",
+                lastName : "Doe"
+            }
+            const person2 = {
+                firstName : "Mary",
+                lastName : "Doe"
+            }
+            document.getElementById("demo").innerHTML = person.fullName.call(person1);
+        </script>
+    </body>
+</html>
