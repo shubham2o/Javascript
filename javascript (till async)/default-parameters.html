@@ -4,6 +4,10 @@
         <h2>Default Parameters</h2>
         <p>Setting a default value to a function parameter.</p>
         <p id = "demo"></p>
+        <br>
+        <p>ECMAScript 2015 allows default parameter values in the function declaration:</p>
+        <p id = "demoOne"></p>
+
 
         <script>
             function myFunction(a, b) {
@@ -13,6 +17,11 @@
                 return a * b;
             }
             document.getElementById("demo").innerHTML = myFunction(7);
+////////////////////////////////
+            function myFunction2015(x, y = 2) {
+                return x * y;
+            }
+            document.getElementById("demoOne").innerHTML = myFunction(7);
         </script>
     </body>
 </html>
