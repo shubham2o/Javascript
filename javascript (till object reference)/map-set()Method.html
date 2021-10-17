@@ -5,14 +5,25 @@
         <p>You can add elements to a Map with the set() method:</p>
         <p>Using Map.set():</p>
         <p id = "demo"></p>
+        <br>
+        <p>The set() method can also be used to change existing Map values:</p>
+        <p id = "demoOne"></p>
+
 
         <script>
             const fruits = new Map();
             fruits.set("apples", 500);
             fruits.set("bananas", 270);
             fruits.set("oranges", 250);
-
             document.getElementById("demo").innerHTML = fruits.get("apples");
+////////////////////////////////
+            const fruitsOne = new Map([
+                ["apples", 500],
+                ["bananas", 270],
+                ["oranges", 250]
+            ]);
+            fruitsOne.set("apples", 200);
+            document.getElementById("demoOne").innerHTML = fruitsOne.get("apples")
         </script>
     </body>
 </html>
