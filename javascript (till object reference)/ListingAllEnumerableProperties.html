@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Listing Enumerable Properties</h2>
+        <p>This example list only the enumerable properties of an object:</p>
+        <p id = "demo"></p>
+
+        <script>
+            const person = {
+                firstName: "John",
+                lastName: "Doe",
+                language : "EN"
+            }
+            
+            Object.defineProperty(person, "language", {enumerable: false});
+
+            document.getElementById("demo").innerHTML =
+            Object.keys(person);
+        </script>
+    </body>
+</html>
