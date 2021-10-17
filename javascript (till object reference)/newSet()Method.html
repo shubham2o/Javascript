@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>The new Set() Method</h2>
+        <p>Pass an Array to the new Set() constructor:</p>
+
+        <!-- Create a Set -->
+        <p>Create a Set from an Array:</p>
+        <p id = "demoOne"></p>
+        <br>
+        <!-- Create another Set -->
+        <p>Create a Set and add literal values:</p>
+        <p>Add values to a Set:</p>
+        <p id = "demoTwo"></p>
+        <br>
+        <!-- Create another Set -->
+        <p>Add variables to a Set:</p>
+        <p id = "demoThree"></p>
+
+        <script>
+            // Create a Set
+            const lettersOne = new Set(["a", "b", "c"]);
+            // Display set.size
+            document.getElementById("demoOne").innerHTML = lettersOne.size;
+
+
+            // Create another Set
+            const lettersTwo  = new Set();
+            // Add Values to the Set
+            lettersTwo.add("a");
+            lettersTwo.add("b");
+            lettersTwo.add("c");
+            // Display set.size
+            document.getElementById("demoTwo").innerHTML = lettersTwo.size;
+
+
+            // Create another Set
+            const lettersThree = new Set();
+            // Create Variables
+            const a ="a";
+            const b ="b";
+            const c ="c";
+            // Add the Varibales to the Set
+            lettersThree.add(a);
+            lettersThree.add(b);
+            lettersThree.add(c);
+            // Display set.size
+            document.getElementById("demoThree").innerHTML = lettersThree.size;
+        </script>
+    </body>
+</html>
