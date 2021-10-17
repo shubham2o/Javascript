@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript Getter and Setters</h2>
+        <p>Getters and setters allow you to get and set properties via methods:</p>
+
+        <p><strong>Get</strong></p>
+        <p>Using the lang property, in this example, returns the value of the language property in upper case:</p>
+        <p id = "demoGet"></p>
+        <br>
+        <br>
+        <p><strong>Set</strong></p>
+        <p>Using the lang property, in this example, stores an upper case value in the language property:</p>
+        <p id = "demoSet"></p>
+
+
+        <script>
+            const person = {
+                firstName: "John",
+                lastName: "Doe",
+                language: "en",
+                get lang() { 
+                    return this.language.toUpperCase();
+                }
+            };
+            document.getElementById("demoGet").innerHTML = person.lang;
+/// /// /// /// ///         /// /// /// /// ///         /// /// /// /// ///
+            const personSet = {
+                firstNameSet: "John",
+                lastNameSet: "Doe",
+                languageSet: "",
+                set lang(lang) { this.languageSet = lang.toUpperCase();}
+            };
+            personSet.lang = "english";
+            document.getElementById("demoSet").innerHTML = personSet.languageSet;
+        </script>
+    </body>
+</html>
