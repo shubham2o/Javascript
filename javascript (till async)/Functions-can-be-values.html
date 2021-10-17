@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Functions can be used as values</h2>
+        <p>JavaScript functions can be used as values:</p>
+        <p>x = myFunction(6,7) or x = 42</p>
+        <p>In both cases, x becomes a number with the value of 12.</p>
+        <p id = "demo"></p>
+
+        <script>
+            function myFunction(a, b) {
+                return a * b;
+            }
+            let x = myFunction(6,7);
+            document.getElementById("demo").innerHTML = x;
+        </script>
+    </body>
+</html>
