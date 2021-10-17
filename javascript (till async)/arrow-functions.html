@@ -7,10 +7,20 @@
         </p>
         <p>Arrow functions are not supported in IE11 or earlier.</p>
         <p id = "demo"></p>
+        <br>
+        <p>You can only omit the return keyword and the curly brackets if 
+            the function is a single statement. Because of this, it might 
+            be a good habit to always keep them:
+        </p>
+        <p id = "demoOne"></p>
+
 
         <script>
             const x = (x,y) => (x * y);
             document.getElementById("demo").innerHTML = x(6,7);
+
+            const z = (x,y) => {return x + y};
+            document.getElementById("demoOne").innerHTML = z(20,10);
         </script>
     </body>
 </html>
