@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Finding HTML element by Id</h2>
+        <p>The easiest way to find an HTML element in the DOM, is by using the element id.</p>
+        <p>This example finds the element with id = "intro":</p>
+        <p id = "intro">Finding HTML elements by Id</p>
+        <p id = "demo"></p>
+
+        <script>
+            const element = document.getElementById("intro");
+            document.getElementById("demo").innerHTML = 
+            "The text from the intro paragraph is: " + element.innerHTML; 
+        </script>
+    </body>
+</html>
