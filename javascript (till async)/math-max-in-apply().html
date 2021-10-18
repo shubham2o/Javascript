@@ -4,9 +4,19 @@
         <h2>Javascript apply()</h2>
         <p>This example returns the highest number in an array of numbers:</p>
         <p id = "demo"></p>
+        <br>
+        <p>The first argument(null) does not matter. It is not used in this example.</p>
+        <p>These example will give the same result:</p>
+        <p id = "demoOne"></p>
+        <p id = "demoTwo"></p>
+        <p id = "demoThree"></p>
+
 
         <script>
             document.getElementById("demo").innerHTML = Math.max.apply(null, [1, 50, 99]);
+            document.getElementById("demoOne").innerHTML = Math.max.apply(Math, [1, 50, 99]);
+            document.getElementById("demoTwo").innerHTML = Math.max.apply("", [1, 50, 99]);
+            document.getElementById("demoThree").innerHTML = Math.max.apply(0, [1, 50, 99]);
         </script>
     </body>
 </html>
