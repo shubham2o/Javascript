@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>The apply() Method with Arguments</h2>
+        <p>The apply() method accepts arguements in an Array:</p>
+        <p>In this example, the fullName method of person is applied on person1:</p>
+        <p id = "demo"></p>
+
+        <script>
+            const person = {
+                fullName : function(city, country) {
+                    return this.firstName + "," + this.lastName + ","  + city + "," + country;
+                }
+            }
+            const person1 = {
+                firstName : "John",
+                lastName : "Doe"
+            }
+            document.getElementById("demo").innerHTML = person.fullName.apply(person1,["Oslo", "Norway"]);
+        </script>
+    </body>
+</html>
