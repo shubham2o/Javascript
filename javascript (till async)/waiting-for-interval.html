@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Waiting for Intervals:</h2>
+        <p>When using the JavaScript function setInterval(), you can specify 
+            a callback function to be executed for each interval:
+        </p>
+        <p>Using setInterval() to display the time every second (2000 milliseconds):</p>
+        <h1 id = "demo"></h1>
+
+
+        <script>
+            setInterval(myFunction, 2000);
+            function myFunction() {
+                let d = new Date();
+                document.getElementById("demo").innerHTML =
+                d.getHours() + ":" + 
+                d.getMinutes() + ":" + 
+                d.getSeconds();
+            }
+        </script>
+    </body>
+</html>
