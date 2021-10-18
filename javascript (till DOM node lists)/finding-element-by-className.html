@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Finding HTMl Elements by Class Name</h2>
+        <p class = "intro">Hello World!</p>
+        <p class = "intro">This example demonstrates the <strong>getElementByClassName</strong> method.</p>
+        <p>If you want to find all HTML elements with the same class name, use getElementByClassName().</p>
+        <p>This example returns a list of all elements with class = "intro".</p>
+        <p id = "demo"></p>
+
+        <script>
+            const element = document.getElementsByClassName("intro");
+            document.getElementById("demo").innerHTML = 
+            'The first paragraph (index 0) with class = "intro" is: ' + element[0].innerHTML;
+        </script>
+    </body>
+</html>
