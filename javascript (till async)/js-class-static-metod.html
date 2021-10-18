@@ -6,6 +6,11 @@
             and you can only call the method on the class itself.
         </p>
         <p id = "demo"></p>
+        <br>
+        <p>If you want to use the myCar object inside the static 
+            method, you can send it as a parameter:
+        </p>
+        <p id = "demoOne"></p>
 
         <script>
             class Car {
@@ -17,12 +22,25 @@
                 }
             }
             let myCar = new Car("Ford");
+
             // You can call "hello()" on the Car Class: 
             document.getElementById("demo").innerHTML = Car.hello();
 
             // But NOT on a Car Object:
             // document.getElementById("demo").innerHTML = myCar.hello();
             // this will raise an error.
+
+//////////// //////////// ////////// ////////////
+            class CarOne {
+                constructor(nameOne) {
+                    this.nameOne = nameOne;
+                }
+                static helloOne(x) {
+                    return "Hello " + x.nameOne;
+                }
+            }
+            let myCarOne = new CarOne("Ford");
+            document.getElementById("demoOne").innerHTML = CarOne.helloOne(myCarOne);
         </script>
     </body>
 </html>
