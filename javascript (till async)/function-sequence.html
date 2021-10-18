@@ -7,6 +7,9 @@
         <br>
         <p>This example will end up displaying "Goodbye":</p>
         <p id = "demo"></p>
+        <br>
+        <p>This example will end up displaying "Hello":</p>
+        <p id = "demoOne"></p>
 
 
         <script>
@@ -21,6 +24,18 @@
             }
             myFirst();
             mySecond();
+////////////////////////////////
+            function display(someOne) {
+                document.getElementById("demoOne").innerHTML = someOne;
+            }
+            function first() {
+                display("Hello");
+            }
+            function second() {
+                display("Goodbye");
+            }
+            second();
+            first();
         </script>
     </body>
 </html>
