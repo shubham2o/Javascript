@@ -2,7 +2,10 @@
 <html>
     <body>
         <h2>JavaScript async/await</h2>
-        <p id = "demo"></p>
+        <h4 id = "demo"></h4>
+        <br>
+        <h4 id = "demoOne"></h4>
+
 
         <script>
             function myDisplayer(some) {
@@ -15,6 +18,14 @@
                 function(value) {myDisplayer(value);},
                 function(error) {myDisplayer(error);}
             );
+////////////////////
+            async function mydisplay() {
+                let myPromise = new Promise(function(resolve, reject) {
+                    resolve("I love you");
+                });
+                document.getElementById("demoOne").innerHTML = await myPromise;
+            }
+            mydisplay();
         </script>
     </body>
 </html>
