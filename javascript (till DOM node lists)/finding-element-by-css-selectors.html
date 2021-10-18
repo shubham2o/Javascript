@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Finding HTML Elements by CSS Selectors</h2>
+        <p class = "intro">Hello World!</p>
+        <p class = "intro">This example demonstrates the <strong>getElementByClassName</strong> method.</p>
+        <p>If you want to find all HTML elements that much a specified CSS selector 
+            (id, class names, types, attributes, values of attributes, etc), use the
+            querySelectorAll() method.
+        </p>
+        <p>This example returns a list of all p elements with class = "intro".</p>
+        <script>
+            const x = document.querySelectorAll("p.intro");
+            document.getElementById("intro").innerHTML =
+            'The first paragraph (index 0) with class= "intro" is: ' +
+            x[0].innerHTML;
+        </script>
+    </body>
+</html>
