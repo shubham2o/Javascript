@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>The call() Method with Arguments</h2>
+        <p>The call() method can accept arguments:</p>
+        <p id = "demo"></p>
+
+        <script>
+            const person = {
+                fullName : function(city, country) { 
+                    return this.firstName + "," + this.lastName + "," + city + "," + country; 
+                }
+            }
+            const person1 = {
+                firstName : "John",
+                lastName : "Doe"
+            }
+            const person2 = {
+                firstname : "Mary",
+                lastName : "Doe"
+            }
+            document.getElementById("demo").innerHTML = 
+            person.fullName.call(person1, "Oslo", "Norway");
+        </script>
+    </body>
+</html>
