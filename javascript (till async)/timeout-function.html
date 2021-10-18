@@ -4,11 +4,24 @@
         <h2>JavaScript Callback - Timeout</h2>
         <p>Wait 3 seconds (3000 milliseconds) for this page to change.</p>
         <h2 id = "demo"></h2>
+<!--////////////////////////////////////////////////////////////////-->
+        <br>
+        <h2>JavaScript setTimeout()</h2>
+        <p>Instead of passing the name of a function as an argument to another function,
+            you can always pass a whole function instead:
+        </p>
+        <p>Wait 5.5 seconds (5500 milliseconds) for this page to change.</p>
+        <h2 id = "demoOne"></h2>
 
         <script>
             setTimeout(myFunction, 3000);
             function myFunction() {
                 document.getElementById("demo").innerHTML = "I Love You!!!";
+            }
+////////////////////////////////////////////////////////////////
+            setTimeout(function() {myFunctionOne("I Hate You!!!");}, 5500);
+            function myFunctionOne(value) {
+                document.getElementById("demoOne").innerHTML = value;
             }
         </script>
     </body>
