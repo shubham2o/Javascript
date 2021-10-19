@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>The addEventListener() method</h2>
+        <p>Add an event listener that fires when a user clicks a button:</p>
+        <button type="button" id="demoBtn">Try it</button>
+        <p id = "demo"></p>
+        
+        <script>
+            document.getElementById("demoBtn").addEventListener("click", displayDate);
+            function displayDate() {
+                document.getElementById("demo").innerHTML = Date();
+            }
+        </script>
+    </body>
+</html>
