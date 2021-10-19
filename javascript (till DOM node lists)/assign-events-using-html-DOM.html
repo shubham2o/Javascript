@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Assign Events Using the HTML DOM</h2>
+        <p>The HTML DOM allows you to assign events to HTML elements using JavaScript:</p>
+        <p>Click "Try it" to execute the displayDate() function.</p>
+        <button id = "myBtn">Try it</button>
+        <p id = "demo"></p>
+
+        <script>
+            document.getElementById("myBtn").onclick = displayDate;
+
+            function displayDate() {
+                document.getElementById("demo").innerHTML = Date();
+            }
+        </script>
+    </body>
+</html>
