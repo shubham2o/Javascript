@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #myDiv {
+                background-color: coral;
+                border: 1px solid;
+                padding: 50px;
+                color: white;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>The removeEventListener() method</h2>
+        <p>The removeEventListener() method removes event handlers that have been attached 
+            with the addEventListener() method:</p>
+        <div id="myDiv">
+            <p>This div element has an onmousemove event handler that displays a random number 
+                every time you move your mouse inside this orange field.</p>
+            <p>Click the button to remove the div's event handler.</p>
+            <button type="button" id="myBtn" onclick = "myFunctionRemove()">REMOVE</button>
+        </div>
+        <p id = "demo"></p>
+
+        <script>
+            document.getElementById("myDiv").addEventListener("mouseover", myFunction);
+
+            function myFunction() {
+                document.getElementById("demo").innerHTML = Math.random();
+            }
+
+            function myFunctionRemove() {
+                document.getElementById("myDiv").removeEventListener("mouseover", myFunction); 
+            }
+        </script>
+    </body>
+</html>
