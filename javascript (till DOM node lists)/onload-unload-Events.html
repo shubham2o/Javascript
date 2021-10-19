@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body onload = "checkForCookies()">
+        <h2>The onload and unload Events</h2>
+        <p>The onload and unload events are triggered when the user enters or leaves the page.</p>
+        <p>The onload and unload events can be used to deal with cookies.</p>
+        <p id = "demo"></p>
+
+        <script>
+            function checkForCookies() {
+                var text = "";
+                if (navigator.cookieEnabled == true) {
+                    text = "Cookies are enabled.";
+                }
+                else {
+                    text = "Cookies are disabled.";
+                }
+                document.getElementById("demo").innerHTML = text;
+            }
+        </script>
+    </body>
+</html>
