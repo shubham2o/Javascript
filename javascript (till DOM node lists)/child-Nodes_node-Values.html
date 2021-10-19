@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Child Nodes and Node Values</h2>
+        <p>A common error in DOM processing is to expect an element node to contain text.</p>
+        <p>All the (3) following examples retrieves the text of an h1 element and copies it 
+            into a p element:</p>
+        <br>
+
+        <h2 id = "demoOne">My First Page</h2>
+        <p id = "demoTwo"></p>
+        <script>
+            document.getElementById("demoTwo").innerHTML = 
+            document.getElementById("demoOne").innerHTML;
+        </script>
+        <br>
+
+        <h2 id = "demoThree">My First Page</h2>
+        <p id = "demoFour"></p>
+        <script>
+            document.getElementById("demoFour").innerHTML = 
+            document.getElementById("demoThree").firstChild.nodeValue;
+        </script>
+        <br>
+
+        <h2 id = "demoFive">My First Page</h2>
+        <p id = "demoSix"></p>
+        <script>
+            document.getElementById("demoSix").innerHTML = 
+            document.getElementById("demoFive").childNodes[0].nodeValue;
+        </script>
+        <br>
+
+        <h2></h2>
+    </body>
+</html>
