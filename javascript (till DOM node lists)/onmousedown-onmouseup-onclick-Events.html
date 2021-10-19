@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #demo {
+                background-color: tomato;
+                padding: 40px;
+                width: 120px;
+                font-weight: bolder;
+                font-size: 28px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>The onmousedown, onmouseup and onclick Events</h2>
+        <p>The onmousedown, onmouseup and onclick events are all parts of a mouse-click. 
+        First when a mouse-button is clicked, the onmousedown event is triggered, then,
+        when the mouse-button is released, the onmouseup event is triggered, finally, 
+        when the mouse-click is completed, the onclick event is triggered.</p>
+        <div id = "demo" onmouseup = "mUp(this)" onmousedown = "mDown(this)">Click Me</div>
+
+        <script>
+            function mDown(obj) {
+                obj.style.backgroundColor = "aqua";
+                obj.innerHTML = "Release Me";
+            }
+            function mUp(obj) {
+                obj.style.backgroundColor = "tomato";
+                obj.innerHTML = "Thank You";
+            }
+        </script>
+    </body>
+</html>
