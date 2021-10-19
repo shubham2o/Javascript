@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #divOne, #divTwo {
+            background-color: coral;
+            padding: 50px;
+            }
+
+            #pOne, #pTwo {
+            background-color: white; 
+            font-size: 20px;
+            border: 1px solid;
+            padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Event Bubbling or Event Capturing?</h2>
+        <p>In bubbling the inner most element's event is handled first and then the outer: 
+            the p element's click event is handled first, then the div element's click event.</p>
+        <p>In capturing the outer most element's event is handled first and then the inner: 
+            the div element's click event will be handled first, then the p element's click 
+            event.</p>
+        <p>With the addEventListener() method you can specify the propagation type by using 
+            the "useCapture" parameter:</p>
+        <div id = "divOne">
+            <h2>Bubbling:</h2>
+            <p id = "pOne">Click me!</p>
+        </div>
+        <br>
+        <br>
+        <div id = "divTwo">
+            <h2>Capturing:</h2>
+            <p id = "pTwo">Click me!</p>
+        </div>
+
+
+        <script>
+            document.getElementById("pOne").addEventListener("click", function(){
+                alert("You clicked the white element!");
+            }, false);
+            document.getElementById("divOne").addEventListener("click", function(){
+                alert("You clicked the orange element!");
+            }, false);
+            
+
+            document.getElementById("pTwo").addEventListener("click", function(){
+                alert("You clicked the white element!");
+            }, true);
+            document.getElementById("divTwo").addEventListener("click", function(){
+                alert("You clicked the orange element!");
+            }, true);
+        </script>
+    </body>
+</html>
