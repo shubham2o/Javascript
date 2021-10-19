@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Multiple Event Handlers</h2>
+        <p>Add Many Event Handlers to the Same Element.</p>
+        <p>The addEventListener() method allows you to add many events 
+            to the same element, without overwriting existing events:
+        </p>
+        <p>This example uses the addEventListener() method to add two 
+            click events to the same button.
+        </p>
+        <button type="button" id = "myBtn">Try it</button>
+
+        <script>
+            var x = document.getElementById("myBtn");
+            x.addEventListener("click", myFunction);
+            x.addEventListener("click", myFunctionOne);
+
+            function myFunction() {
+                alert("Hello World!");
+            }
+            function myFunctionOne() {
+                alert("This function was also executed!");
+            }
+        </script>
+    </body>
+</html>
