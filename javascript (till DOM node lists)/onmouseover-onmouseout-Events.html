@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #demo {
+                background-color: tomato;
+                padding: 40px;
+                width: 120px;
+                font-weight: bolder;
+                font-size: 28px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>The onmouseover and onmouseout Events</h2>
+        <p>The onmouseover and onmouseout events can be used to trigger a 
+            function when the user mouses over, or out of, an HTML elements:</p>
+        <div id = "demo" onmouseover = "mOver(this)" onmouseout = "mOut(this)">
+            Mouse Over Me
+        </div>
+
+        <script>
+            function mOver(obj) {
+                obj.innerHTML = "Thank You";
+            }
+            function mOut(obj) {
+                obj.innerHTML = "Mouse Over Me";
+            }
+        </script>
+    </body>
+</html>
