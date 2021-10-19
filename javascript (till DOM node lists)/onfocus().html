@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>onfocus()</h2>
+        <label for = "demo">Enter your name:</label>
+        <input type = "text" id = "demo" onfocus = "myfunction(this)">
+        <p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+
+        <script>
+            function myfunction(obj) {
+                obj.style.backgroundColor = "yellow";
+            }
+        </script>
+    </body>
+</html>
