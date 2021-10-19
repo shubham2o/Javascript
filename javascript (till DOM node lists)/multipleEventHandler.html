@@ -11,6 +11,7 @@
         </p>
         <button type="button" id = "myBtn">Try it</button>
 
+
         <script>
             var x = document.getElementById("myBtn");
             x.addEventListener("click", myFunction);
@@ -22,6 +23,34 @@
             function myFunctionOne() {
                 alert("This function was also executed!");
             }
+        </script>
+
+
+        <br>
+        <p>You can add events of different types to the same element:</p>
+        <p>This example uses the addEventListener() method to add many events on the same button.</p>
+        <button type = "button" id = "myBtnOne">Try it</button>
+        <p id = "demoP"></p>
+
+        <script>
+            var x = document.getElementById("myBtnOne");
+            x.addEventListener("mouseover", myMouseOver);
+            x.addEventListener("mouseout", myMouseOut);
+            x.addEventListener("click", myClick);
+
+            function myMouseOver() {
+                document.getElementById("demoP").innerHTML += "Mouse over!" + "<br>";
+            }
+            function myMouseOut() {
+                document.getElementById("demoP").innerHTML += "Mouse out!" + "<br>";
+            }
+            function myClick() {
+                document.getElementById("demoP").innerHTML += "Click!" + "<br>";
+            }
+            // NOTICE (+) SIGN BEFORE (=) SIGN & AFTER .innerHTML ===>
+            // It will not delete the end result and will continue 
+            // to show the same result repeatedly when the button 
+            // is clicked over and over again.
         </script>
     </body>
 </html>
