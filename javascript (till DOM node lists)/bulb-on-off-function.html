@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body style = "text-align:center">
+        <img id = "demoImg" src = "bulboff.gif" height = "180" width = "100" alt = "bulb-on" onmousedown = "mDown(this)" onmouseup = "mUp(this)">
+        <p>Click mouse and hold down!</p>
+
+        <script>
+            function mDown() {
+                document.getElementById("demoImg").src = "bulbon.gif";
+            }
+            function mUp() {
+                document.getElementById("demoImg").src = "bulboff.gif";
+            }
+        </script>
+    </body>
+</html>
