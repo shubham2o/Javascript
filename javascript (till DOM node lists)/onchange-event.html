@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript HTML Events - onchange event</h2>
+        <label for = "demo">Enter your name:</label>
+        <input type="text" id = "demo" onchange = "upper()">
+        <p>When you leave the input field, a function is triggered 
+            which transforms the input text to upper case.
+        </p>
+
+        <script>
+            function upper() {
+                const x = document.getElementById("demo");
+                x.value = x.value.toUpperCase();
+            }
+        </script>
+    </body>
+</html>
