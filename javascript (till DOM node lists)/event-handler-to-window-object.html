@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Add an Event handler to the window Object</h2>
+        <p>The addEventListener() method allows you to add event listeners on any HTML DOM 
+        object such as HTML elements, the HTML document, the window object, or other objects
+        that support events, like the xmlhttpRequest object.</p>
+        <p>Add an event listener that fires when a user resizes the window:</p>
+        <p>Try resizing this browser window to trigger the "resize" event handler.</p>
+        <p id = "demo"></p>
+
+        <script>
+            window.addEventListener("resize", function(){
+                document.getElementById("demo").innerHTML = Math.random();
+            })
+        </script>
+    </body>
+</html>
