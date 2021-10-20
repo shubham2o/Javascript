@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h2>JavaScript Window</h2>
+    <body style = "text-align:center">
+        <h2>JavaScript Window - Height and Width Method</h2>
         <p id = "pOne"></p>
-
         <script>
             document.getElementById("pOne").innerHTML = 
             "Browser inner window width : " + window.innerWidth + "px<br>" + 
             "Browser inner window height : " + window.innerHeight + "px";
         </script>
+        <h2>JavaScript Window - Open Method</h2>
+        <button type = "button" onclick = "window.open()">CLICK TO OPEN</button>
+        <br>
+        <h2>JavaScript Window - Close Method</h2>
+        <button type = "button" onclick = "window.close()">CLICK TO CLOSE</button>
+        <br>
+        <h2>JavaScript Window - Move To Method</h2>
+        <button type = "button" onclick = "window.moveTo()">CLICK TO MOVE</button>
+        <br>
+        <h2>JavaScript Window - Resize To Method</h2>
+        <button type = "button" onclick = "window.resizeTo()">CLICK TO RESIZE</button>
     </body>
 </html>
