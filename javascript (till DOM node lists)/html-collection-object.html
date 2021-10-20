@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>HTMLCollection Object</h2>
+        <p>The getElementByTagName() method returns an HTMLCollection object.</p>
+        <p>An HTMLCollection object is an array-like list (collection) of HTML elements.</p>
+        <p>The following code selects all p elements in a document:</p>
+        <p>Hello World!</p>
+        <p>Hello Norway!</p>
+        <p id = "pOne"></p>
+
+        <script>
+            const myCollection = document.getElementsByTagName("p");
+            document.getElementById("pOne").innerHTML = 
+            "The innerHTML of the fourth paragraph is: " + myCollection[4].innerHTML; 
+        </script>
+    </body>
+</html>
