@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>HTML DOM NodeList Object</h2>
+        <h4>JavaScript HTML DOM</h4>
+        <p>Hello World!</p>
+        <p>Hello Norway!</p>
+        <button type = "button" onclick = "myFunction()">Click ME!</button>
+        <p id = "pOne"></p>
+
+
+        <script>
+            function myFunction() {
+                const obj = document.querySelectorAll("p");
+
+                document.getElementById("pOne").innerHTML = 
+                "The innerHTML of the second paragraph is : " + obj[1].innerHTML;
+            }
+        </script>
+    </body>
+</html>
