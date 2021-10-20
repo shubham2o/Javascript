@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>The setTimeout() Method</h2>
+        <p>The window.setTimeout() method can be written without the window prefix.</p>
+        <p>The first parameter is a function to be executed.</p>
+        <p>The second paremeter indicates the number of milliseconds before execution.</p>
+        <br>
+
+        <p>Wait 2.5 seconds, and the page will alert "Hello":</p>
+        <button type = "button" onclick = "setTimeout(myFunction, 2500)">TRY IT</button>
+        <script>
+            function myFunction() {
+                alert("Hello");
+            }
+        </script>
+        <br><br><br>
+
+        <h2>The clearTimeout() Method</h2>
+        <p>The clearTimeout() method stops the execution of the function specifies in setTimeout().</p>
+        <p>If the function has not already been executed, you can stop the execution by calling the 
+            clearTimeout() method:</p>
+        <br>
+
+        <p>Same example as above, but with an added "Stop" button:</p>
+        <p>(You must click "Stop" before the 3 seconds are up.)</p>
+        <button type = "button" onclick = "myVar = setTimeout(myFunctionOne, 1500)"> <!--[[ NOTICE ~ onclick ="myVar" = setTimeout()" ]]-->
+            TRY IT
+        </button> 
+        <script>
+            function myFunctionOne() {
+                alert("Hello!!!");
+            }
+        </script>
+        <button type = "button" onclick = "clearTimeout(myVar)">STOP IT</button>
+    </body>
+</html>
