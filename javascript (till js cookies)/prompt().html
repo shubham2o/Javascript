@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Prompt Box</h2>
+        <p>When a prompt box pops up, the user will have to click either "OK" or "Cancel" 
+            to proceed after entering an input value.</p>
+        <p>If the user clicks "OK" the box returns the input value. If the user clicks 
+            "Cancel" the box returns null.</p>
+        <br>
+        <button type = "button" onclick = "myFunction()">TRY IT</button>
+        <p id = "pOne"></p>
+
+        <script>
+            function myFunction() {
+                let text;
+                let person = prompt("Please enter your name: " , "Harry Potter");
+                if(person == null || person == "") {
+                    text = "User cancelled the prompt.";
+                }
+                else {
+                    text = "Hello " + person + "! How are you today?";
+                }
+                document.getElementById("pOne").innerHTML += text + "<br>";
+            }
+        </script>
+    </body>
+</html>
