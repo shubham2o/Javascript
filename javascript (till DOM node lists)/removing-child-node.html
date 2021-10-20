@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Removing a Child Node</h2>
+        <p>For browsers that does not support the remove() method, you have to find the 
+            parent node to remove an element:</p>
+        <div id = "divOne">
+            <p id = "pOne">Remove Child Element</p>
+            <p id = "pTwo">This is another paragraph.</p>
+        </div>
+        <button type = "button" onclick = "myFunction()">Remove Element</button>
+
+        <script>
+            function myFunction() {
+                const parent = document.getElementById("divOne");
+                const child = document.getElementById("pOne");
+                parent.removeChild(child);
+            }
+        </script>
+    </body>
+</html>
