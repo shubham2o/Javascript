@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>The Browser Engine</h2>
+        <p>The product property returns the product name of the browser engine:</p>
+        <p>Do not rely on it! Most of the browsers returns "Gecko" as a product name!</p>
+        <h4 id = "demo"></h4>
+        <script>
+            document.getElementById("demo").innerHTML = 
+            "navigator.product is " + navigator.product;
+        </script>
+    </body>
+</html>
