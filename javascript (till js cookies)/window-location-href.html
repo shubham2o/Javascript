@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Window Location Href</h2>
+        <p>The window.location.href property returns the URL of the current page.</p>
+        <br>
+
+        <p>Display the href (URL) of the current page.</p>
+        <p id = "pOne"></p>
+        <script>
+            document.getElementById("pOne").innerHTML =
+            "Page location is " + window.location.href;
+        </script>
+        <br>
+
+        <p>The window.location object can be written without the window prefix:</p>
+        <p id = "pTwo"></p>
+        <script>
+            document.getElementById("pTwo").innerHTML =
+            "<strong>without window as a prefix</strong> ~ <br> Page location is " + location.href; 
+        </script>
+    </body>
+</html>
