@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Replacing HTML Elements</h2>
+        <p>To replace an element to the HTML DOM, use the replaceChild() method:</p>
+        <div id = "divOne">
+            <p id = "pOne">This is a paragraph.</p>
+            <p id = "pTwo">This is  a paragraph.</p>
+        </div>
+        <button type = "button" onclick = "myFunction()">Replace Element</button>
+
+        <script>
+            function myFunction() {
+                const parent = document.getElementById("divOne");
+                const child = document.getElementById("pOne");
+                const para = document.createElement("p");
+                const node = document.createTextNode("THIS IS A NEW PARAGRAPH.");
+                para.appendChild(node);
+                parent.replaceChild(para, child);
+            }
+        </script>
+    </body>
+</html>
