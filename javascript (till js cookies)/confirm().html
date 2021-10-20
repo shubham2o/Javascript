@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Confirm Box</h2>
+        <button type = "button" onclick = "myFunction()">TRY IT</button>
+        <p id = "pOne"></p>
+
+        <script>
+            function myFunction() {
+                var txt;
+                if(confirm("Press a button!")) {
+                    txt = "You pressed OK!";
+                }
+                else {
+                    txt = "You pressed Cancel!";
+                }
+                document.getElementById("pOne").innerHTML += txt + "<br>";
+            }
+        </script>
+    </body>
+</html>
