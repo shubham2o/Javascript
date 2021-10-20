@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Removing Existing HTML Elements</h2>
+        <p>To remove an HTML element, use the remove() method:</p>
+        <h4>Remove an HTML Element.</h4>
+        <div id = "divOne">
+            <p id = "pOne">This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+        <button type = "button" onclick = "myFunction()">Remove ELement</button>
+
+        <script>
+            function myFunction() {
+                document.getElementById("pOne").remove();
+            }
+        </script>
+    </body>
+</html>
