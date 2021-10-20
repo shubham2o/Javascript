@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Creating New HTML Elements ~ (Nodes)</h2>
+        <p>To add a new element to the HTML DOM, you must create the element (element node) 
+            first, and then append it to an existing element.</p>
+        <div id = "divOne">
+            <p>Add a new HTML Element.</p>
+            <p>This is a paragraph</p>
+            <p>This is another paragraph</p>
+        </div>
+
+        <script>
+            const para = document.createElement("p");
+            const node = document.createTextNode("This is new.");
+            para.appendChild(node);
+            const element = document.getElementById("divOne");
+            element.appendChild(para);
+        </script>
+    </body>
+</html>
