@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>The checkValidity() Method</h2>
+        <p>Enter a number and click OK:</p>
+        <input type = "number" id = "textOne" min = "100" max = "300" required>
+        <button type = "button" onclick = "myFunction()">OK</button>
+        <p>If the number is less than 100 or greater than 300, an error message will be 
+            displayed</p>
+        <p id = "pOne"></p>
+        <script>
+            function myFunction() {
+                const obj = document.getElementById("textOne");
+                if (!obj.checkValidity()) {
+                    document.getElementById("pOne").innerHTML = obj.validationMessage;
+                }
+                else {
+                    document.getElementById("pOne").innerHTML = "Input OK!";
+                }
+            }
+        </script>
+    </body>
+</html>
