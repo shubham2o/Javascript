@@ -7,9 +7,11 @@
         <p>The second parameter indicates the length of the time-interval between each execution.</p>
         <p>This example executes a function called "myTimer" once every second (like a digital watch).</p>
         <br>
+
         <p>Display the current time:</p>
         <p>A script in this page starts this clock (after 4 seconds) :</p>
         <p id = "pOne"></p>
+        <br>
 
         <script>
             setInterval(myTimer, 4000);
@@ -18,5 +20,26 @@
                 document.getElementById("pOne").innerHTML = d.toLocaleTimeString();
             }
         </script>
+
+        <h2>The clearInterval() Method</h2>
+        <p>The clearInterval() method stops the executions of the function specified in the
+            setInterval() method.</p>
+        <p>The clearInterval() method uses the variable returned from setInterval():</p>
+        <br>
+
+        <p>Same example as above, but we have added a "Stop time" button:</p>
+        <button type = "button" onclick ="myVar = setInterval(myFunction, 1000)">START TIME</button>
+        <br><br>
+
+        <script>
+            function myFunction() {
+                const time = new Date();
+                document.getElementById("pTwo").innerHTML = time.toLocaleTimeString();
+            }
+        </script>
+
+        <button type = "button" onclick = "clearInterval(myVar)">STOP TIME</button>
+        <p id = "pTwo"></p>
+        <br>
     </body>
 </html>
