@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Web Storage API</h2>
+        <p>The Web Storage API is a simple syntax for storing and retrieving data in the browser.
+            It is very easy to use:</p>
+        <p id = "pOne"></p>
+        <script>
+            localStorage.setItem("name", "Shubham Sharma");
+            document.getElementById("pOne").innerHTML = localStorage.getItem("name");
+        </script>
+    </body>
+</html>
