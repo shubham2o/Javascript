@@ -41,5 +41,28 @@
                 document.getElementById("pTwo").innerHTML = field;
             }
         </script>
+
+        <br>
+
+        <h2>validity.rangeUnderflow</h2>
+        <p>Enter a number and click OK:</p>
+        <input type = "number" id = "textThree" min = "100" required>
+        <button type = "button" onclick = "myFunctionThree()">OK</button>
+        <p>If the number is less than 100 (the input's min attribute), an error message will
+            be displayed.</p>
+        <p id = "pThree"></p>
+        <script>
+            function myFunctionThree() {
+                let txtfld;
+                if (document.getElementById("textThree").validity.rangeUnderflow) {
+                    txtfld = "Value too small";
+                }
+                else {
+                    txtfld = "Input OK";
+                }
+                document.getElementById("pThree").innerHTML = txtfld;
+            }
+        </script>
+        </p>
     </body>
 </html>
