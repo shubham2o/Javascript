@@ -4,13 +4,30 @@
         <h2>JavaScript Fetch API</h2>
         <p>The Fetch API interface allows web browsers to make HTTP requests to web servers.</p>
         <p>The example below fetches a file and displays the content:</p>
-        <p id = "demo">Fetch a file to change this text.</p>
+        <br>
+
+        <h4 id = "demo">Fetch a file to change this text.</h4>
         <script>
             let file = "fetch_info.txt"
-
             fetch(file)
             .then(x => x.text())
             .then(y => document.getElementById("demo").innerHTML = y);
+        </script>
+        <br>
+
+        <h1>Fetch API</h1>
+        <p>Since Fetch is based on async and await, the example above might be easier to 
+            understand like this:</p>  
+        <br>
+
+        <h4 id = "demoOne"></h4>
+        <script>
+            getText("fetch_info.txt");
+            async function getText(file) {
+                let x = await fetch(file);
+                let y = await x.text();
+                document.getElementById("demoOne").innerHTML = y;
+            }
         </script>
     </body>
 </html>
