@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript Fetch API</h2>
+        <p>The Fetch API interface allows web browsers to make HTTP requests to web servers.</p>
+        <p>The example below fetches a file and displays the content:</p>
+        <p id = "demo">Fetch a file to change this text.</p>
+        <script>
+            let file = "fetch_info.txt"
+
+            fetch(file)
+            .then(x => x.text())
+            .then(y => document.getElementById("demo").innerHTML = y);
+        </script>
+    </body>
+</html>
