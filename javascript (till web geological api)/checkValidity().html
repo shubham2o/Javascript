@@ -4,12 +4,12 @@
         <h2>The checkValidity() Method</h2>
         <p>Enter a number and click OK:</p>
         <input type = "number" id = "textOne" min = "100" max = "300" required>
-        <button type = "button" onclick = "myFunction()">OK</button>
+        <button type = "button" onclick = "myFunctionOne()">OK</button>
         <p>If the number is less than 100 or greater than 300, an error message will be 
             displayed</p>
         <p id = "pOne"></p>
         <script>
-            function myFunction() {
+            function myFunctionOne() {
                 const obj = document.getElementById("textOne");
                 if (!obj.checkValidity()) {
                     document.getElementById("pOne").innerHTML = obj.validationMessage;
@@ -17,6 +17,28 @@
                 else {
                     document.getElementById("pOne").innerHTML = "Input OK!";
                 }
+            }
+        </script>
+
+        <br>
+
+        <h2>validity.rangeOverflow</h2>
+        <p>Enter a number and click OK:</p>
+        <input type = "number" id = "textTwo" max = "100" required>
+        <button type = "button" onclick = "myFunctionTwo()">OK</button>
+        <p>If the number is greater than 100 (the input's max attribute), an error message
+            will be displayed.</p>
+        <p id = "pTwo"></p>
+        <script>
+            function myFunctionTwo() {
+                let field;
+                if (document.getElementById("textTwo").validity.rangeOverflow) {
+                    field = "Value too large";
+                }
+                else {
+                    field = "Input OK";
+                }
+                document.getElementById("pTwo").innerHTML = field;
             }
         </script>
     </body>
