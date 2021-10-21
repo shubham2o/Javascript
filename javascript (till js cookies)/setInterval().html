@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>The setInterval() Method</h2>
+        <p>The setInterval() method repeats a given function at every given time-interval</p>
+        <p>The first parameter is the function to be executed.</p>
+        <p>The second parameter indicates the length of the time-interval between each execution.</p>
+        <p>This example executes a function called "myTimer" once every second (like a digital watch).</p>
+        <br>
+        <p>Display the current time:</p>
+        <p>A script in this page starts this clock (after 4 seconds) :</p>
+        <p id = "pOne"></p>
+
+        <script>
+            setInterval(myTimer, 4000);
+            function myTimer() {
+                const d = new Date();
+                document.getElementById("pOne").innerHTML = d.toLocaleTimeString();
+            }
+        </script>
+    </body>
+</html>
