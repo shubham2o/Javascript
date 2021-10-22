@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Who's Buying Lunch?</h1>
+        <button onclick = "lunchPayer()">Click to know who's buying us a lunch</button>
+        <p id = "payerName"></p>
+        <script>
+            var names = ["Shubham", "Angela", "Stephen", "Klay", "Draymond"];
+            var numberofPeople = names.length;
+            var randomPersonPosition = Math.floor(Math.random() * numberofPeople);
+            var randomPerson = names[randomPersonPosition];
+
+            console.log(randomPerson + " is going to buy lunch today!");
+            function lunchPayer() {
+                document.getElementById("payerName").innerHTML = 
+                randomPerson + " is going to buy lunch today!";
+            }
+        </script>
+    </body>
+</html>
