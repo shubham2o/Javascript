@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Fizz Buzz</h1>
+        <script>
+            var numberOne = prompt("Enter a number to print.");
+            if (numberOne == 0) {
+                alert(numberOne);
+            }
+            else if (numberOne % 3 == 0) {
+                if (numberOne % 5 == 0) {
+                    alert("FizzBuzz");
+                }
+                else {
+                    alert("Fizz");
+                }
+            }
+            else if (numberOne % 5 == 0) {
+                alert("Buzz");
+            }
+            else if (isNaN(numberOne)) {
+                alert("Please enter a number!");
+            }
+            else {
+                alert("Please enter a number!");
+            }
+        </script>
+    </body>
+</html>
