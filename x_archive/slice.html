@@ -2,9 +2,10 @@
     <body>
         <h1>Slice Method</h1>
         <script>
-            var tweet = prompt("Compose you tweet:");
+            var tweet = prompt("\nCompose you tweet:");
+            var tweetLength = alert("\nYour tweet length is " + tweet.length + " characters.\n\n\n\n\nMaximum characters allowed ~ 140");
             var tweetUnder140 = tweet.slice(0,140);
-            alert(tweetUnder140);
+            alert("\n" + tweetUnder140 + "\n\n\n\n\n(" + tweetUnder140.length + "/140)");
         </script>
     </body>
 </html>
