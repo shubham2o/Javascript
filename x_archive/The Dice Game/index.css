@@ -3,3 +3,10 @@ body {
     background-color: black !important;
     color: white !important;
 }
+
+
+#imgDice1,
+#imgDice2 {
+    width: auto !important;
+    height: auto !important;
+}
