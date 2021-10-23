@@ -6,11 +6,11 @@ var randomNumberPlayer2 = Math.floor(Math.random() * 6) + 1;
 var dicePlayer2 = "images/dice" + randomNumberPlayer2 + ".png";
 
 
-var player1Name = prompt("Enter Player 1 name ⬇️");
+var player1Name = prompt("Enter Player 1 name here⬇️");
 document.getElementById("player1").innerHTML = player1Name;
 
 
-var player2Name = prompt("Enter Player 2 name ⬇️");
+var player2Name = prompt("Enter Player 2 name here⬇️");
 document.getElementById("player2").innerHTML = player2Name;
 
 
