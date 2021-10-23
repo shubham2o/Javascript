@@ -2,16 +2,29 @@ body {
     box-sizing: border-box;
     background-color: black !important;
     color: white !important;
+    font-family: Montserrat, sans-serif !important;
 }
 
 
 #refresh {
     margin: 25px auto !important;
+    color: yellow;
+    font-weight: bolder;
+    letter-spacing: 8px;
+    word-spacing: 10px;
+    font-style: italic !important;
+    text-shadow: 5px 3px red;
 }
 
 
 .playersName {
     margin: 60px auto 35px;
+}
+
+
+#player1, 
+#player2 {
+    text-decoration: underline;
 }
 
 
@@ -24,6 +37,13 @@ body {
 
 .playerWon {
     margin: 40px auto auto;
+}
+
+
+#player1Wins,
+#player2Wins,
+#matchDraw {
+    text-shadow: 1px 3px green;
 }
 
 

@@ -19,7 +19,7 @@ else if (randomNumberPlayer1 < randomNumberPlayer2) {
 else {
     document.getElementById("imgDice1").src = dicePlayer1;
     document.getElementById("imgDice2").src = dicePlayer2;
-    document.getElementById("matchDraw").innerHTML = "DRAW";
+    document.getElementById("matchDraw").innerHTML = "DRAW!";
 }
 
 
