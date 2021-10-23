@@ -6,6 +6,14 @@ var randomNumberPlayer2 = Math.floor(Math.random() * 6) + 1;
 var dicePlayer2 = "images/dice" + randomNumberPlayer2 + ".png";
 
 
+var player1Name = prompt("Enter Player 1 name ⬇️");
+document.getElementById("player1").innerHTML = player1Name;
+
+
+var player2Name = prompt("Enter Player 2 name ⬇️");
+document.getElementById("player2").innerHTML = player2Name;
+
+
 if (randomNumberPlayer1 > randomNumberPlayer2) {
     document.getElementById("imgDice1").src = dicePlayer1;
     document.getElementById("imgDice2").src = dicePlayer2;
@@ -21,6 +29,7 @@ else {
     document.getElementById("imgDice2").src = dicePlayer2;
     document.getElementById("matchDraw").innerHTML = "DRAW!";
 }
+
 
 
 
