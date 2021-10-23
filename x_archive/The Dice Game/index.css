@@ -5,8 +5,28 @@ body {
 }
 
 
+#refresh {
+    margin: 25px auto !important;
+}
+
+
+.playersName {
+    margin: 60px auto 35px;
+}
+
+
 #imgDice1,
 #imgDice2 {
     width: auto !important;
     height: auto !important;
+}
+
+
+.playerWon {
+    margin: 40px auto auto;
+}
+
+
+.matchTied {
+    margin: -8px auto auto !important;
 }
