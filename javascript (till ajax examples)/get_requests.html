@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>GET Request</h1>
+        <p>A simple GET request:</p>
+        <button type = "button" onclick = "myFunction()">Request data</button>
+        <br>
+        <p id = "demo"></p>
+
+        <script>
+            function myFunction() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function () {
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+                xhttp.open("GET", "ajax_info.txt");
+                xhttp.send();
+            }
+        </script>
+    </body>
+</html>
