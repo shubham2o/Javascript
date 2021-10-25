@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Displaying the Result in a Map</h2>
+        <p>To display the result in a map, you need access to a map service, like Google Maps.</p>
+        <p>In the example below, the returned latitude and longitude is used to show the location
+            in a Google Map (using a static image):</p>
+        <br>
+        <button type = "button" onclick = "geolocationAPI()">TRY IT</button>
+        <p id = "pOne"></p>
+
+
+        <script>
+            const x = document.getElementById("pOne");
+            function geolocationAPI() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                }
+                else {
+                    x.innerHTML = "Geolocation is not supported by this browser";
+                }
+            }
+            function showPosition (position) {
+                let latlon = position.coords.latitude + "," + position.coords.longitude;
+                let img_url = "https://maps.googleapis.com/maps/api/static?center="+latlon+
+                "&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
+                document.getElementById("pOne").innerHTML = "<img src = '"+img_url+"'>";
+            }
+        </script>
+    </body>
+</html>
