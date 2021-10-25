@@ -22,9 +22,9 @@
             }
             function showPosition (position) {
                 let latlon = position.coords.latitude + "," + position.coords.longitude;
-                let img_url = "https://maps.googleapis.com/maps/api/static?center="+latlon+
+                let img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+
                 "&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
-                document.getElementById("pOne").innerHTML = "<img src = '"+img_url+"'>";
+                document.getElementById("pOne").innerHTML = "<img src='"+img_url+"'>";
             }
         </script>
     </body>
