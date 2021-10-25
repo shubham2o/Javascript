@@ -6,7 +6,6 @@
         <button type = "button" onclick = "myFunction()">Request data</button>
         <br>
         <p id = "demo"></p>
-
         <script>
             function myFunction() {
                 const xhttp = new XMLHttpRequest();
@@ -17,5 +16,23 @@
                 xhttp.send();
             }
         </script>
+        <br>
+
+
+        <p>In the exampl above, you may get a cached result. To avoid this, add a unique ID 
+            to the URL:</p>
+        <button type = "button" onclick = "loadDoc()">Request data</button>
+        <script>
+            function loadDoc() {
+                const yhttp = new XMLHttpRequest();
+                yhttp.onload = function() {
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+                yhttp.open("GET", "ajax_info.txt?");
+                yhttp.send();
+            }
+        </script>
+        
+        
     </body>
 </html>
