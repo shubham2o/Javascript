@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>watchPosition()</h1>
+        <p>It returns the current position of the user and continues to return updates position 
+            as the user moves (like the GPS in a car).</p>
+        <br>
+        <h1>clearWatch()</h1>
+        <p>Stops the watchPosition() method.</p>
+        <br>
+        <button type = "button" onclick = "geolocationAPI()">TRY IT</button>
+        <p id = "pOne"></p>
+
+        <script>
+            const x = document.getElementById("pOne");
+            function geolocationAPI() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                }
+                else {
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+            function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude + 
+                "<br>Longitude:" + position.coords.longitude;
+            }
+        </script>
+    </body>
+</html>
