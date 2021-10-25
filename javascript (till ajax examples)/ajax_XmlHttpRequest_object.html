@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>AJAX - The XMLHttpRequest Object</h2>
+        <div id = "divOne">
+            <p>Let AJAX change this text.</p>
+            <button type = "button" onclick = "ajaxFunction()">Change Content</button>
+        </div>
+        
+        <script>
+            function ajaxFunction() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("divOne").innerHTML = this.responseText;
+                }
+                xhttp.open("GET", "ajax_info.txt");
+                xhttp.send();
+            }
+        </script>
+    </body>
+</html>
