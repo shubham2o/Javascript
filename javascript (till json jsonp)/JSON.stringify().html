@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <h1>
-            
-        </h1>
+        <h1>JSON.stringify()</h1>
+        <p>A common use of JSON is to exchange data to/from a web server.</p>
+        <p>When sending data to a web server, the data has to be a string.</p>
+        <p>Convert a JavaScript object into a string with JSON.stringify().</p>
+        <br>
+        <p id = "pOne"></p>
+        <script>
+            const obj = {name : "John", age: 30, city : "new York"};
+            const myJSON = JSON.stringify(obj);
+            document.getElementById("pOne").innerHTML = myJSON;
+        </script>
     </body>
 </html>
