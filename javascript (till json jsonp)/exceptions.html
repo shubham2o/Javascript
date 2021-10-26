@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Exceptions</h1>
+        <br>
+
+        <h3>Parsing Dates</h3>
+        <p>Dates objects are not allowed in JSON. If you need to include a date, write it as a string.</p>
+        <p>You can convert it back into a date object later:</p>
+        <p>Convert a string into a date:</p>
+        <p id = "pOne"></p>
+        <script>
+            const txt = '{"name" : "John", "age" : 30, "city" : "San Francisco", "birth" : "1986-12-14"}';
+            const obj = JSON.parse(txt);
+            obj.birth = new Date(obj.birth);
+            document.getElementById("pOne").innerHTML = obj.name + "," + obj.birth;
+        </script>
+        <br>
+
+        <h1>Parsing Functions</h1>
+        <p>Functions are not allowed in JSON, if you need to include a function, write it as a string.</p>
+        <p>You can convert it back into a function later:</p>
+        <p>Convert a string into a function:</p>
+        <p id = "pTwo"></p>
+        <script>
+            const text = '{"name" : "John", "age" : "function() {return 30;}", "city" : "New York"}';
+            const objOne = JSON.parse(text);
+            objOne.age = eval("(" + objOne.age + ")");
+            document.getElementById("pTwo").innerHTML = objOne.name + ", " + objOne.age();
+        </script>
+    </body>
+</html>
