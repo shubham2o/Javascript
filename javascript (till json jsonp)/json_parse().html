@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JSON.parse()</h1>
+        <p>A common use of JSON is to exchange data to/from a web server.</p>
+        <p>When recieving data from a web server, the data is always a string.</p>
+        <p>Parse the data with JSON.parse(), and the data becomes a JavaScript object.</p>
+        <br>
+        <p id = "pOne"></p>
+        <script>
+            const txt = '{"name":"John", "age" : 30, "city" : "New York"}'
+            const obj = JSON.parse(txt);
+            document.getElementById("pOne").innerHTML = obj.name + "," + obj.age;
+        </script>
+    </body>
+</html>
