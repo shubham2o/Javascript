@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>The XMLHttpRequest Object ~ POST request</h1>
+        <button type = "button" onclick = "myFunction()">Request Data</button>
+        <p id = "pOne"></p>
+
+        <script>
+            function myFunction() {
+                const xhttp = new XMLHttpRequest();
+                http.onload = function() {
+                    document.getElementById("pOne").innerHTML = this.responseText;
+                }
+                xhttp.open("POST", "ajax_info.txt");
+                xhttp.send();
+            }
+        </script>
+    </body>
+</html>
