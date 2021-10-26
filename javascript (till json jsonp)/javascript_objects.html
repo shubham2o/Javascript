@@ -16,5 +16,18 @@
             };
             document.getElementById("pOne").innerHTML = myObj.name;
         </script>
+        <br>
+
+        <p>It can also be accessed like this:</p>
+        <p id = "pTwo"></p>
+
+        <script>
+            const myObjTwo = {
+                name : "Stephen",
+                age : 30,
+                city : "New York"
+            };
+            document.getElementById("pTwo").innerHTML = myObjTwo["name"];
+        </script>
     </body>
 </html>
