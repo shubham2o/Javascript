@@ -29,5 +29,19 @@
             };
             document.getElementById("pTwo").innerHTML = myObjTwo["name"];
         </script>
+        <br>
+
+        <h1>Modify a JavaScript Object</h1>
+        <p id = "pThree"></p>
+        
+        <script>
+            const myObjThree = {
+                name : "John",
+                age : 30,
+                city: "New York"
+            };
+            myObjThree.name = "Gilbert";
+            document.getElementById("pThree").innerHTML = myObjThree.name;
+        </script>
     </body>
 </html>
