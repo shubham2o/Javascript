@@ -7,7 +7,6 @@
         <p>With javascript you can create an object and assign data to it, like this:</p>
         <br>
         <p id = "pOne"></p>
-
         <script>
             const myObj = {
                 name : "John",
@@ -20,7 +19,6 @@
 
         <p>It can also be accessed like this:</p>
         <p id = "pTwo"></p>
-
         <script>
             const myObjTwo = {
                 name : "Stephen",
@@ -33,7 +31,6 @@
 
         <h1>Modify a JavaScript Object</h1>
         <p id = "pThree"></p>
-        
         <script>
             const myObjThree = {
                 name : "John",
@@ -42,6 +39,19 @@
             };
             myObjThree.name = "Gilbert";
             document.getElementById("pThree").innerHTML = myObjThree.name;
+        </script>
+        <br>
+
+        <p>It can also be modified like this:</p>
+        <p id = "pFour"></p>
+        <script>
+            const myObjFour = {
+                name : "John",
+                age : 30,
+                city : "New York"
+            };
+            myObjFour["name"] = "Gilbert";
+            document.getElementById("pFour").innerHTML = myObjFour.name;
         </script>
     </body>
 </html>
