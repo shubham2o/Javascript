@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Array as JSON</h1>
+        <p>When using the JSON.parse() on a JSON derived from an array, the method will return
+            a JavaScript array, instead of a JavaScript object.</p>
+        <p>Data written as an JSON array will be parsed into a JavaScript array.</p>
+        <br>
+        <p id = "pOne"></p>
+        <script>
+            const txt = '["Ford", "BMW", "Audi", "Fiat"]';
+            const myArr = JSON.parse(txt);
+            document.getElementById("pOne").innerHTML = myArr[1];
+        </script>
+    </body>
+</html>
