@@ -20,6 +20,12 @@
         </script>
         <br>
 
-        <p></p>
+        <h1>JavaScript</h1>
+        <br>
+        <p id = "demoOne"></p>
+        <script>
+            const myElement = document.getElementsByTagName("p");
+            document.getElementById("demoOne").innerHTML = "The text in the first paragraph is: " + myElement[0].innerHTML;
+        </script>
     </body>
 </html>
