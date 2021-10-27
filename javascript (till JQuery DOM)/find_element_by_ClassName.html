@@ -20,6 +20,14 @@
         </script>
         <br>
 
-        
+        <h1>JavaScript</h1>
+        <p class = "introOne">Hello World!</p>
+        <p class = "introOne">Hello Sweden!</p>
+        <p class = "introOne">Hello Japan!</p>
+        <p class = "demoOne"></p>
+        <script>
+            const myElement = document.getElementsByClassName("introOne");
+            document.getElementById("demoOne").innerHTML = "The first paragraph with class = 'intro' is: " + myElement[0].innerHTML;
+        </script>
     </body>
 </html>
