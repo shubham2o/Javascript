@@ -11,12 +11,22 @@
         <p class = "intro">Hello World!</p>
         <p class = "intro">Hello Sweden!</p>
         <p class = "intro">Hello Japan!</p>
+        <br>
         <p id = "demo"></p>
         <script>
             $(document).ready(function() {
                 var myElements = $("p.intro");
                 $("#demo").text("The first paragraph with class = 'intro' is: " + myElements[0].innerHTML);
             });
+        </script>
+        <br>
+
+        <h1>JavaScript</h1>
+        <p id = "demoOne"></p>
+        <script>
+            const myElement = document.querySelectorAll("p.intro");
+            document.getElementById("demoOne").innerHTML = 
+            "THe first paragraph with class = 'intro' is : " + myElement[0].innerHTML;
         </script>
     </body>
 </html>
