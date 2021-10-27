@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Get Text Content</h1>
+        <p>Get the inner text of an HTML element:</p>
+        <br>
+
+        <h1>jQuery</h1>
+        <p id = "pOne">Hello India!</p>
+        <p id = "pTwo">Hello Sweden!</p>
+        <p id = "pThree">Hello Japan!</p>
+        <br>
+        <p id = "pFour"></p>
+        <script>
+            $(document).ready(function() {
+                var myText = $("#pOne").text();
+                $("#pFour").text(myText);
+            });
+        </script>
+        <br>
+
+        
+    </body>
+</html>
