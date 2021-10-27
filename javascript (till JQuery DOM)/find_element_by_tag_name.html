@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Finding HTML Elements by Tag Name</h1>
+        <p>Hello World!</p>
+        <p>Hello Sweden!</p>
+        <p>Hello Japan!</p>
+        <br>
+        <p id = "demo"></p>
+        <script>
+            $(document).ready(function() {
+                var myElements = $("p");
+                $("#demo").text("The text in the first paragraph is: " + myElements[0].innerHTML);
+            });
+        </script>
+    </body>
+</html>
