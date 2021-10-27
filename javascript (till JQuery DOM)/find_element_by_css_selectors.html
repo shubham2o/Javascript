@@ -6,12 +6,12 @@
     <body>
         <h1>Finding HTML Element by CSS Selectors</h1>
         <p>Return a list of all p elements with class = "intro".</p>
-        <br>
-        <h1>jQuery</h1>
         <p class = "intro">Hello World!</p>
         <p class = "intro">Hello Sweden!</p>
         <p class = "intro">Hello Japan!</p>
         <br>
+
+        <h1>jQuery</h1>
         <p id = "demo"></p>
         <script>
             $(document).ready(function() {
@@ -26,7 +26,7 @@
         <script>
             const myElement = document.querySelectorAll("p.intro");
             document.getElementById("demoOne").innerHTML = 
-            "THe first paragraph with class = 'intro' is : " + myElement[0].innerHTML;
+            "The first paragraph with class = 'intro' is : " + myElement[0].innerHTML;
         </script>
     </body>
 </html>
