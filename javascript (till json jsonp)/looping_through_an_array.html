@@ -8,13 +8,24 @@
         <script>
             const myJSON = '{"name" : "John", "age" : 30, "cars" : ["Ford", "BMW", "Fiat"]}';
             const obj = JSON.parse(myJSON);
-
             let text = "";
             for (let i in obj.cars) {
                 text += obj.cars[i] + ", ";
             }
-
             document.getElementById("pOne").innerHTML = text;
+        </script>
+        <br>
+
+        <p>Or you can use a <strong>for</strong> loop:</p>
+        <p id = "pTwo"></p>
+        <script>
+            const json = '{"name" : "John", "age" : 30, "cars" : ["Ford", "BMW", "Fiat"]}';
+            const objOne = JSON.parse(json);
+            let textOne = "";
+            for (let i = 0; i < objOne.cars.length; i++) {
+                textOne += objOne.cars[i] + ", ";
+            }
+            document.getElementById("pTwo").innerHTML = textOne;
         </script>
     </body>
 </html>
