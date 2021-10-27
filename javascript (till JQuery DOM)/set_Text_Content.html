@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Set Text Content</h1>
+        <p>Set the inner text of an HTML element:</p>
+        <p id = "pOne">Hello World!</p>
+        <p id = "pTwo">Hello Sweden!</p>
+
+        <script>
+            $(document).ready(function() {
+                var myElement = $("#pOne");
+                myElement.text("Hello India!");
+            })
+        </script>
+    </body>
+</html>
