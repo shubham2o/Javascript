@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JSON Server</h1>
+        <p>A common use of JSON is to exchange data to/from a web server.</p>
+        <p>When receiving data from from a web server, the data is always a string.</p>
+        <p>Parse the data with JSON.parse(), and the data becomes a JSON object.</p>
+        <br>
+        <h1>Sending Object</h1>
+        <p>If you have data stored in a JavaScript object, you can convert the object into JSON,
+            and send it to a server:</p>
+        <script>
+            const obj = {name : "John", age : 31, city : "San Francisco"};
+            const myJSON = JSON.stringify(obj);
+            window.location = "demo_json.php?x=" + myJSON;
+        </script>
+    </body>
+</html>
