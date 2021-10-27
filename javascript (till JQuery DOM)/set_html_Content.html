@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Set HTML Content</h1>
+        <p>Set the HTML content of an element:</p>
+        <br>
+
+        <h1>jQuery</h1>
+        <p id = "01">Hello World!</p>
+        <p id = "02">Hello Sweden!</p>
+        <script>
+            $(document).ready(function() {
+                $("#02").html("<p>Hello World!</p>");
+            });
+        </script>
+    </body>
+</html>
