@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Arrays in Objects</h1>
+        <p>Objects can contain arrays:</p>
+        <p>Access Array Values:</p>
+        <br>
+        <p id = "pOne"></p>
+        <script>
+            const myJSON = '{"name" : "John", "age" : 30, "cars" : ["Ford", "BMW", "Fiat"]}';
+            const obj = JSON.parse(myJSON);
+            document.getElementById("pOne").innerHTML = obj.cars[2];
+        </script>
+    </body>
+</html>
