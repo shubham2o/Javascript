@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Looping Through an Array</h1>
+        <p>You can access array values by using a for in loop:</p>
+        <p>Looping An Array:</p>
+        <p id = "pOne"></p>
+        <script>
+            const myJSON = '{"name" : "John", "age" : 30, "cars" : ["Ford", "BMW", "Fiat"]}';
+            const obj = JSON.parse(myJSON);
+
+            let text = "";
+            for (let i in obj.cars) {
+                text += obj.cars[i] + ", ";
+            }
+
+            document.getElementById("pOne").innerHTML = text;
+        </script>
+    </body>
+</html>
