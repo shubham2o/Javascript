@@ -18,5 +18,15 @@
                 $("#03").text($("#02").parent().prop("nodeName"));
             });
         </script>
+        <br>
+
+        <h1>JavaScript</h1>
+        <p id = "04">Hello World!</p>
+        <p id = "05">Hello Sweden!</p>
+        <p id = "06"></p>
+        <script>
+            document.getElementById("06").innerHTML = 
+            document.getElementById("04").parentNode.nodeName;
+        </script>
     </body>
 </html>
