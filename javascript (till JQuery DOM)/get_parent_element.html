@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Get Parent Element</h1>
+        <p>Return the parent element of an HTML element.</p>
+        <br>
+
+        <h1>jQuery</h1>
+        <p id = "01">Hello World!</p>
+        <p id = "02">Hello Sweden!</p>
+
+        <p id = "03"></p>
+        <script>
+            $(document).ready(function() {
+                $("#03").text($("#02").parent().prop("nodeName"));
+            });
+        </script>
+    </body>
+</html>
