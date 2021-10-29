@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function handleRemoveEvent() {
+                var parent = document.getElementById("div1");
+                var child = document.getElementById("h2Two");
+                parent.removeChild(child);
+            }
+
+            function handleCreateEvent() {
+                var parent = document.getElementById("div1");
+                var child = document.createElement("h2");
+                var text = document.createTextNode("TV ~ 1500$");
+                child.appendChild(text);
+                parent.appendChild(child);
+            }
+        </script>
+    </head>
+    <body>
+        <div id = "div1">
+            <h2 id = "h2One">Laptop ~ 1000$</h2>
+            <h2 id = "h2Two">Cellphone ~ 300$</h2>
+        </div>
+        <button type = "button" onclick = "handleCreateEvent()" id = "buttonAdd">ADD</button>
+        <button type = "button" onclick = "handleRemoveEvent()" id = "buttonDelete">DELETE</button>
+    </body>
+</html>
