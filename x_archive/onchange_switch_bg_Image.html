@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onChange(x) {
+                document.body.style.backgroundImage = "url('"+x+"')";
+                document.body.style.backgroundRepeat = "no-repeat";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>onchange switch Background Image</h1>
+        <select name = "selectOption" onchange = "onChange(this.value)">
+            <option value="">Select any One</option>
+            <option value = "images/dice1.png">IMAGE 1</option>
+            <option value = "images/dice3.png">IMAGE 2</option>
+            <option value = "images/dice5.png">IMAGE 3</option>
+        </select>
+    </body>
+</html>
