@@ -24,28 +24,56 @@
                 }
             }
         </script>
+        <!--  
+        -->
+        <style>
+            body,
+            button {
+                color: aqua;
+                background-color: black;
+                font-size: 30px;
+                letter-spacing: 3px;
+                word-spacing: 5px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            h1 {
+                text-align: center;
+                padding-bottom: 30px;
+                color: red;
+            }
+            button {
+                margin-bottom: 10px;
+            }
+        </style>
     </head>
+<!--  
+-->
     <body>
+        <h1>CALCULATOR</h1>
+        <!--  
+        -->
         <form action = "" name = "calc">
             ENTER A NUMBER: 
             <br>
             <input type = "text" name = "num1">
             <br><br>
+
             ENTER AN ANOTHER NUMBER: 
             <br>
             <input type = "text" name = "num2">
             <br><br>
+
             <button type = "button" onclick = "calculate(this)" value = "Add">ADD</button>
             <button type = "button" onclick = "calculate(this)" value = "Sub">SUBTRACT</button>
             <button type = "button" onclick = "calculate(this)" value = "Mul">MULTIPLY</button>
             <button type = "button" onclick = "calculate(this)" value = "Div">DIVIDE</button>
             <button type = "button" onclick = "calculate(this)" value = "Mod">MODULUS</button>
             <br><br>
+
             RESULT : 
             <br>
             <input type="text" name = "result">
             <br><br>
-
         </form>
     </body>
 </html>
