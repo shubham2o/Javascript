@@ -1,7 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            function calculate(a) {
+                var x = parseInt(document.calc.num1.value);
+                var y = parseInt(document.calc.num2.value);
+                var z = document.calc.result;
 
+                if (a.value == "Add") {
+                    z.value = x + y;
+                }
+                else if (a.value == "Sub") {
+                    z.value = x - y;
+                }
+                else if (a.value == "Mul") {
+                    z.value = x * y;
+                }
+                else if (a.value == "Div") {
+                    z.value = x / y;
+                }
+                else {
+                    z.value = x % y;
+                }
+            }
+        </script>
     </head>
     <body>
         <form action = "" name = "calc">
@@ -13,11 +35,11 @@
             <br>
             <input type = "text" name = "num2">
             <br><br>
-            <button type = "button" onclick = "calculate()">ADD</button>
-            <button type = "button" onclick = "calculate()">SUBTRACT</button>
-            <button type = "button" onclick = "calculate()">MULTIPLY</button>
-            <button type = "button" onclick = "calculate()">DIVIDE</button>
-            <button type = "button" onclick = "calculate()">MODULUS</button>
+            <button type = "button" onclick = "calculate(this)" value = "Add">ADD</button>
+            <button type = "button" onclick = "calculate(this)" value = "Sub">SUBTRACT</button>
+            <button type = "button" onclick = "calculate(this)" value = "Mul">MULTIPLY</button>
+            <button type = "button" onclick = "calculate(this)" value = "Div">DIVIDE</button>
+            <button type = "button" onclick = "calculate(this)" value = "Mod">MODULUS</button>
             <br><br>
             RESULT : 
             <br>
