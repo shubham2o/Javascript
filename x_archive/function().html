@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            let phyMarks = parseInt(prompt("Enter marks scored in Physics"));
+            let chemMarks = parseInt(prompt("Enter marks scored in Chemistry"));
+            let mathsMarks = parseInt(prompt("Enter marks scored in Mathematics"));
+
+            let total = phyMarks+ chemMarks + mathsMarks;
+            document.write("Total of marks scored in all subjects is " + total + "<br>")
+
+            let avg = total / 3;
+            document.writeln("Average of total marks scored is " + avg + "<br>");
+
+            function grade() {
+                if (avg > 90) {
+                    document.write("Grade is A <br>");
+                }
+                else if (avg > 70 && avg < 90) {
+                    document.write("Grade is B <br>");
+                }
+                else {
+                    document.write("Grade is C <br>");
+                }
+            }
+
+            grade();
+        </script>
+    </body>
+</html>
