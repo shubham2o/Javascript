@@ -8,20 +8,20 @@
             let mathsMarks = parseInt(prompt("Enter marks scored in Mathematics"));
 
             let total = phyMarks+ chemMarks + mathsMarks;
-            document.write("Total of marks scored in all subjects is " + total + "<br>")
+            document.write("Total of marks scored in all subjects is " + total + "<br><br>")
 
             let avg = total / 3;
-            document.writeln("Average of total marks scored is " + avg + "<br>");
+            document.writeln("Average of total marks scored is " + avg + "<br><br>");
 
             function grade() {
                 if (avg > 90) {
-                    document.write("Grade is A <br>");
+                    document.write("Grade is A <br><br>");
                 }
                 else if (avg > 70 && avg < 90) {
-                    document.write("Grade is B <br>");
+                    document.write("Grade is B <br><br>");
                 }
                 else {
-                    document.write("Grade is C <br>");
+                    document.write("Grade is C <br><br>");
                 }
             }
 
