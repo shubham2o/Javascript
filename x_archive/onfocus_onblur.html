@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function functionOnFocus(x) {
+                x.style.color = "white";
+                x.style.backgroundColor = "blue";
+                x.style.width = "500px";
+                x.style.height = "100px";
+            }
+
+            function functionOnBlur(x) {
+                x.style.color = "white";
+                x.style.backgroundColor = "red";
+                x.style.width = "500px";
+                x.style.height = "100px";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>onfocus and onblur</h1>
+        <input type = "text" onfocus = "functionOnFocus(this)" onblur = "functionOnBlur(this)" value = "Hello World!">
+    </body>
+</html>
