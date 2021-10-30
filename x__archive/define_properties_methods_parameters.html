@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function Flight(airlines, flightNumber) {
+                this.airlines = airlines;
+                this.flightNumber = flightNumber;
+                this.display = function() {
+                    document.writeln(this.airlines + "<br>");
+                    document.writeln(this.flightNumber + "<br>");
+                };
+            }
+
+            let flight1 = new Flight("American Airlines", "AA#911");
+            let flight2 = new Flight("Sully Airlines", "SA#420");
+
+            flight1.display();
+            flight2.display();
+
+            document.writeln("<br>");
+
+            document.writeln(flight1.airlines);
+            document.writeln(flight1.flightNumber);
+
+            document.writeln("<br>");
+
+            document.writeln(flight2.airlines);
+            document.writeln(flight2.flightNumber);
+        </script>
+    </head>
+</html>
