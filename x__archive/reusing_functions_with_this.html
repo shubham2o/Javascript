@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function displayDetails() {
+                document.write(this.id + "<br>");
+                document.write(this.name + "<br>");
+            }
+
+            let student1 = {
+                "id" : 101,
+                "name" : "Shubham",
+                "display" : displayDetails
+            };
+            let student2 = {
+                "id" : 102,
+                "name" : "Stephen",
+                "display" : displayDetails
+            };
+
+            document.write(student1.id + "<br>");
+            document.write(student1.name + "<br>");
+            student1.display();
+
+            document.write("<br>" + student2.id + "<br>");
+            document.write(student2.name + "<br>");
+            student2.display();
+        </script>
+    </head>
+</html>
