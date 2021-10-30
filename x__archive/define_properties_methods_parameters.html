@@ -3,9 +3,9 @@
     <head>
         <script>
             function Flight(airlines, flightNumber) {
-                this.airlines = airlines;
-                this.flightNumber = flightNumber;
-                this.display = function() {
+                this.airlines = airlines;            // Data Property
+                this.flightNumber = flightNumber;    // Data Property
+                this.display = function() {          // Function Property
                     document.writeln(this.airlines);
                     document.writeln(this.flightNumber + "<br>");
                 };
@@ -26,6 +26,35 @@
 
             document.writeln(flight2.airlines);
             document.writeln(flight2.flightNumber);
+
+// // // // // // // // //
+document.writeln("<br>");
+document.writeln("<br>");
+// // // // // // // // 
+
+            function Laptop(manifacturer, processor, memory) {
+                this.manifacturer = manifacturer;    // Data Property
+                this.processor = processor;                // Data Property
+                this.memory = memory;            // Data Property
+                this.display = function() {        // Function Property
+                    document.writeln(this.manifacturer);
+                    document.writeln("<br>" + this.processor);
+                    document.writeln("<br>" + this.memory);
+                };
+            }
+
+            let laptop1 = new Laptop("<br>" + "Lenovo", "Ryzen5-5500u" , "512gb");
+            let laptop2 = new Laptop("<br>" + "Surface", "Intel-i7" , "1TB");
+            let laptop3 = new Laptop("<br>" + "Macbook", "Intel-i9" , "1TB");
+
+            laptop1.display();
+            document.writeln("<br>");
+
+            laptop2.display();
+            document.writeln("<br>");
+
+            laptop3.display();
+            document.writeln("<br>");
         </script>
     </head>
 </html>
