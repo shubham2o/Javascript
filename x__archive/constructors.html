@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function Flight() {
+
+            }
+
+            let flight1 = new Flight();
+            let flight2 = new Flight();
+            
+            document.writeln(flight1 instanceof Flight);
+            document.writeln(flight2 instanceof Flight);
+
+            document.writeln("<br>");
+
+            document.writeln(flight1.constructor === Flight);
+            document.writeln(flight2.constructor === Flight);
+        </script>
+    </head>
+</html>
