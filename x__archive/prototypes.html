@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function Flight(airlines, flightNumber) {
+                this.airlines = airlines;
+                this.flightNumber = flightNumber;
+            }
+
+            Flight.prototype.display = function() {
+                document.writeln(this.airlines);
+                document.writeln(this.flightNumber);
+            }
+
+            let flight1 = new Flight("American Airlines", "AA#911");
+            let flight2 = new Flight("Sully Airlines", "SA#420");
+
+            flight1.display();
+            document.writeln("<br><hr>");
+            flight2.display();
+        </script>
+    </head>
+</html>
