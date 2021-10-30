@@ -3,10 +3,32 @@
     <head>
         <script>
             let obj1 = new Object();
-            let obj2 = obj1;
-            let obj3 = obj2;
+            obj1.name = "John Mayer";
+            obj1.id = "101";
             obj1.myProperty = "Hello! my name is shubham sharma."
-            document.write(obj3.myProperty)
+
+            let obj2 = obj1;
+
+            let obj3 = obj2;
+
+            // Output will be same in all of them.
+            document.write(obj1 + "<br>");
+            document.write(obj1.myProperty + "<br>")
+            document.write(obj1.name + "<br>");
+            document.write(obj1.id + "<br>");
+            document.write("<br>");
+
+            document.write(obj2 + "<br>");
+            document.write(obj2.myProperty + "<br>")
+            document.write(obj2.name + "<br>");
+            document.write(obj2.id + "<br>");
+            document.write("<br>");
+
+            document.write(obj3 + "<br>");
+            document.write(obj3.myProperty + "<br>")
+            document.write(obj3.name + "<br>");
+            document.write(obj3.id + "<br>");
+            document.write("<br>");
         </script>
     </head>
     <body>
