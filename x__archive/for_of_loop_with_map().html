@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let scores = new Map([["Maths", 90], ["Physics", 95], ["Chemistry", 100]]);
+
+            for (let k of scores.keys()) {
+                document.writeln(k);
+                document.writeln(scores.get(k));
+            }
+
+            document.writeln("<br>");
+
+            for (let v of scores.values()) {
+                document.writeln(v);
+            }
+
+            document.writeln("<br>");
+
+            for (let x of scores.entries()) {
+                document.writeln(x[0], x[1]);
+            }
+        </script>
+    </head>
+</html>
