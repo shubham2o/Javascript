@@ -16,9 +16,9 @@
                 }
             }
             class FiveSeries extends BMW {
-                constructor(make, model, year, cruiseControlEnabled) {
+                constructor(make, model, year, parkingAssistEnabled) {
                     super(make, model, year);
-                    this.cruiseControlEnabled = cruiseControlEnabled;
+                    this.parkingAssistEnabled = parkingAssistEnabled;
                 }
             }
             let threeSeries = new ThreeSeries("BMW", "420", 2019, true);
@@ -34,7 +34,7 @@
             console.log(fiveSeries.make);
             console.log(fiveSeries.model);
             console.log(fiveSeries.year);
-            console.log(fiveSeries.cruiseControlEnabled);
+            console.log(fiveSeries.parkingAssistEnabled);
 
             document.write(threeSeries.make);
             document.write("<br>" + threeSeries.model);
@@ -44,7 +44,7 @@
             document.write(fiveSeries.make);
             document.write("<br>" + fiveSeries.model);
             document.write("<br>" + fiveSeries.year);
-            document.write("<br>" + fiveSeries.cruiseControlEnabled + "<hr>");
+            document.write("<br>" + fiveSeries.parkingAssistEnabled + "<hr>");
         </script>
     </head>
 </html>
