@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            class BMW {
+                constructor(make, model, year) {
+                    this.make = make;
+                    this.model = model;
+                    this.year = year;
+                }
+            }
+            class ThreeSeries extends BMW {
+                constructor(make, model, year, cruiseControlEnabled) {
+                    super(make, model, year);
+                    this.cruiseControlEnabled = cruiseControlEnabled;
+                }
+            }
+            class FiveSeries extends BMW {
+                constructor(make, model, year, cruiseControlEnabled) {
+                    super(make, model, year);
+                    this.cruiseControlEnabled = cruiseControlEnabled;
+                }
+            }
+            let threeSeries = new ThreeSeries("BMW", "420", 2019, true);
+            let fiveSeries = new FiveSeries("BMW", "420420", 2021, true);
+
+            console.log(threeSeries.make);
+            console.log(threeSeries.model);
+            console.log(threeSeries.year);
+            console.log(threeSeries.cruiseControlEnabled);
+
+            console.log("<br>");
+
+            console.log(fiveSeries.make);
+            console.log(fiveSeries.model);
+            console.log(fiveSeries.year);
+            console.log(fiveSeries.cruiseControlEnabled);
+
+            document.write(threeSeries.make);
+            document.write("<br>" + threeSeries.model);
+            document.write("<br>" + threeSeries.year);
+            document.write("<br>" + threeSeries.cruiseControlEnabled + "<hr>");
+
+            document.write(fiveSeries.make);
+            document.write("<br>" + fiveSeries.model);
+            document.write("<br>" + fiveSeries.year);
+            document.write("<br>" + fiveSeries.cruiseControlEnabled + "<hr>");
+        </script>
+    </head>
+</html>
