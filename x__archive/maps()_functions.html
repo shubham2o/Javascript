@@ -10,6 +10,13 @@
             document.writeln("<br>" + scores.get("maths"));
             document.writeln("<br>" + scores.get("physics")); 
             document.writeln("<br>" + scores.get("chemistry")); 
+            document.writeln("<br>" + scores.size);
+            document.writeln("<br>" + scores.has("maths"));
+            scores.delete("maths");
+            document.writeln("<br>" + scores.size);
+            document.writeln("<br>" + scores.has("maths"));
+            scores.clear();
+            document.writeln("<br>" + scores.size);
         </script>
     </head>
 </html>
