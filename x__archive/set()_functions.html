@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let courses = new Set();
+            courses.add("Angular");
+            courses.add("Node");
+            courses.add("Java");
+
+            for (let entry of courses) {
+                document.writeln(entry);
+            }
+            document.writeln("<br>" + courses.size);
+            document.writeln("<br>" + courses.has("Angular"));
+            courses.clear();
+            document.writeln("<br>" + courses.size);
+            document.writeln("<br>" + courses.has("Angular"));
+
+            document.writeln("<br><br><hr>");
+
+            let courses1 = new Set(["Angular", "Node", "Java"]);
+
+            for (let ent of courses1) {
+                document.writeln(ent);
+            }
+            document.writeln("<br>" + courses1.size);
+            document.writeln("<br>" + courses1.has("Angular"));
+            courses1.clear();
+            document.writeln("<br>" + courses1.size);
+            document.writeln("<br>" + courses1.has("Angular"));
+        </script>
+    </head>
+</html>
