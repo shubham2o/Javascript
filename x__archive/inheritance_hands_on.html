@@ -8,6 +8,14 @@
                     this.model = model;
                     this.year = year;
                 }
+                start() {
+                    console.log("Start Engine");
+                    document.write("Start Engine");
+                }
+                stop() {
+                    console.log("Stop Engine");
+                    document.write("Stop Engine");
+                }
             }
             class ThreeSeries extends BMW {
                 constructor(make, model, year, cruiseControlEnabled) {
@@ -28,6 +36,8 @@
             console.log(threeSeries.model);
             console.log(threeSeries.year);
             console.log(threeSeries.cruiseControlEnabled);
+            threeSeries.start();
+            threeSeries.stop();
 
             console.log("<br>");
 
@@ -35,16 +45,26 @@
             console.log(fiveSeries.model);
             console.log(fiveSeries.year);
             console.log(fiveSeries.parkingAssistEnabled);
+            fiveSeries.start();
+            fiveSeries.stop();
+
+            console.log("<br>");
 
             document.write(threeSeries.make);
             document.write("<br>" + threeSeries.model);
             document.write("<br>" + threeSeries.year);
-            document.write("<br>" + threeSeries.cruiseControlEnabled + "<hr>");
+            document.write("<br>" + threeSeries.cruiseControlEnabled);
+            document.write("<br>") + threeSeries.start();
+            document.write("<br>") + threeSeries.stop() + document.write("<hr>");
+
+            console.log("<br>");
 
             document.write(fiveSeries.make);
             document.write("<br>" + fiveSeries.model);
             document.write("<br>" + fiveSeries.year);
-            document.write("<br>" + fiveSeries.parkingAssistEnabled + "<hr>");
+            document.write("<br>" + fiveSeries.parkingAssistEnabled);
+            document.write("<br>") + fiveSeries.start();
+            document.write("<br>") + fiveSeries.stop() + document.write("<hr>");
         </script>
     </head>
 </html>
