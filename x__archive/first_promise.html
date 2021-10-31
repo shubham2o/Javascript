@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myAsyncFun() {
+                let promise = new Promise((resolve, reject)=>{
+                    setTimeout(()=>{
+                        console.log("Working Asynchronously")
+                        resolve();
+                    }
+                    ,1000);
+                });
+            return promise;
+            }
+        </script>
+    </head>
+</html>
