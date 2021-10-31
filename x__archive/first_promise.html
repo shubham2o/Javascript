@@ -8,10 +8,14 @@
                         console.log("Working Asynchronously")
                         resolve();
                     }
-                    ,1000);
+                    ,3000);
                 });
             return promise;
             }
+
+            myAsyncFun().then(
+            ()=>console.log("Work Done")
+            );
         </script>
     </head>
 </html>
