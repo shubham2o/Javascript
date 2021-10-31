@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let account = (function() {
+                let balance = 1000;
+                return {
+                    name : "Shubham",
+                    getBalance : function() {
+                        return balance;
+                    },
+                    addInterest: function(interest) {
+                        balance += interest;
+                    }
+                };
+            }());
+
+            document.writeln(account.name);
+            document.writeln(account.getBalance());
+
+            account.balance = 2000;
+            document.writeln(account.getBalance());
+
+            account.addInterest(300);
+            document.writeln(account.getBalance());
+        </script>
+    </head>
+</html>
