@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var array = [
+                "string",
+                100,
+                ["embed, 200"],
+                {car : "ford"},
+                function() {
+                    return "drive";
+                }
+            ];
+
+            document.writeln(array[0]);
+            document.writeln("<br><hr>");
+
+            array[0] = "new String";
+            document.writeln(array[0]);
+            document.writeln("<br><hr>");
+
+            array[0] += "Concat";
+            document.writeln(array[0]);
+            document.writeln("<br><hr>");
+
+            document.writeln(array[5]);
+            array[5] = "New Array";
+            document.writeln(array[5]);
+            document.writeln("<br><hr>");
+
+        </script>
+    </head>
+</html>
