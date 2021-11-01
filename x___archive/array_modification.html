@@ -14,22 +14,45 @@
 
             document.writeln(array[0]);
             document.write(array.length);
+
             document.writeln("<br><hr>");
 
             array[0] = "new String";
             document.writeln(array[0]);
             document.write(array.length);
+
             document.writeln("<br><hr>");
 
             array[0] += "Concat";
             document.writeln(array[0]);
             document.write(array.length);
+
             document.writeln("<br><hr>");
 
             document.writeln(array[5]);
             array[5] = "New Array";
             document.writeln(array[5]);
             document.write(array.length);
+
+            document.writeln("<br><hr>");
+
+            array[0] = "string";
+            document.writeln(array[0]);
+            document.writeln(array.length);
+            array.shift();
+            document.writeln("<br>");
+            document.writeln(array[0]);
+            document.writeln(array.length);
+
+            document.writeln("<br><hr>");
+
+            document.writeln(array[0]);
+            document.writeln(array.length);
+            document.writeln("<br>");
+            array.unshift("ABC", "XYZ", 9900, function() {return "Hello World!";});
+            document.writeln(array[0]);
+            document.writeln(array.length);
+
             document.writeln("<br><hr>");
 
         </script>
