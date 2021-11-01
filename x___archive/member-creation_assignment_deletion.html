@@ -30,15 +30,27 @@
             ];
 
             document.writeln(car.make);
+            document.write("<br><hr>");
+
             car.make = "Tesla";
             document.writeln(car.make);
+            document.write("<br><hr>");
+
             car.make += 200;
             document.writeln(car.make);
+            document.write("<br><hr>");
+
             car.speed *= 2;
             document.writeln(car.speed);
+            document.write("<br><hr>");
+
             car.model = "sc420";
             document.writeln(car.model);
+            document.write("<br><hr>");
 
+            delete car.model;
+            document.writeln(car.model);
+            document.write("<br><hr>");
         </script>
     </head>
 </html>
