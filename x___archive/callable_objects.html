@@ -11,6 +11,28 @@
                 secondName : "Sharma"
                 })
             );
+
+            document.writeln("<br><hr>")
+
+            function name1(fullName1) {
+                return fullName1;
+            }
+            document.writeln(
+                name1(function() {
+                    return "embed";
+                })
+            );
+
+            document.writeln("<br><hr>")
+
+            function name2(fullName2) {
+                return fullName2();
+            }
+            document.writeln(
+                name2(function() {
+                    return "embed";
+                })
+            );
         </script>
     </head>
 </html>
