@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function Apple(x, y, color, score){
+                this.x = x; 
+                this.y = y;
+                this.color = color;
+                this.score = score;
+            }
+
+            Apple.prototype = {
+                eat : function(){
+                    return "Eat the apple";
+                }, 
+                throw : function() {
+                    return "Throw the apple";
+                },
+                func : function() {
+                    return "Hello World!";
+                }
+            };
+
+            var apple1 = new Apple(10, 20, "red", 200);
+            var apple2 = new Apple(30, 30, "lightred", 300);
+            var apple3 = new Apple(50, 60, "darkred", 400);
+
+            document.writeln(apple1.eat);
+            document.writeln("<br>" + apple1.throw);
+            document.writeln("<br>" + apple1.func);
+            document.writeln("<br>" + apple1.eat());
+            document.writeln("<br>" + apple1.throw());
+            document.writeln("<br>" + apple1.func());
+            document.writeln("<br>" + apple1);
+            document.writeln("<br>" + apple1.x);
+            document.writeln("<br>" + apple1.y);
+            document.writeln("<br>" + apple1.color);
+            document.writeln("<br>" + apple1.score + "<br>");
+            document.writeln(apple1 instanceof Apple);
+
+            document.writeln("<hr>");
+
+            document.writeln(apple2.eat);
+            document.writeln("<br>" + apple1.throw);
+            document.writeln("<br>" + apple1.func);
+            document.writeln("<br>" + apple2.eat());
+            document.writeln("<br>" + apple1.throw());
+            document.writeln("<br>" + apple1.func());
+            document.writeln("<br>" + apple2);
+            document.writeln("<br>" + apple2.x);
+            document.writeln("<br>" + apple2.y);
+            document.writeln("<br>" + apple2.color);
+            document.writeln("<br>" + apple2.score + "<br>");
+            document.writeln(apple2 instanceof Apple);
+
+            document.writeln("<hr>");
+
+            document.writeln(apple3.eat);
+            document.writeln("<br>" + apple1.throw);
+            document.writeln("<br>" + apple1.func);
+            document.writeln("<br>" + apple3.eat());
+            document.writeln("<br>" + apple1.throw());
+            document.writeln("<br>" + apple1.func());
+            document.writeln("<br>" + apple3);
+            document.writeln("<br>" + apple3.x);
+            document.writeln("<br>" + apple3.y);
+            document.writeln("<br>" + apple3.color);
+            document.writeln("<br>" + apple3.score + "<br>");
+            document.writeln(apple3 instanceof Apple);
+
+            document.writeln("<hr>");
+
+        </script>
+    </head>
+</html>
