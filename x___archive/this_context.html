@@ -17,7 +17,7 @@
             function global() {
                 return this;
             }
-            global.call(object);
+            global.call();
 
             document.writeln(object + "<br>");
             document.writeln(object.prop + "<br>");
@@ -34,6 +34,8 @@
 
             document.writeln(global + "<br>");
             document.writeln(global() + "<br>");
+
+            document.writeln("<hr>");
         </script>
     </head>
 </html>
