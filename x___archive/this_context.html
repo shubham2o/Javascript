@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var object = {
+                prop: this,
+                method: function() {
+                    return this;
+                }
+            };
+            var array = [
+                this,
+                function() {
+                    return this;
+                }
+            ];
+            function global() {
+                return this;
+            }
+            global.call(object);
+
+            document.writeln(object + "<br>");
+            document.writeln(object.prop + "<br>");
+            document.writeln(object.method + "<br>");
+            document.writeln(object.method() + "<br>");
+
+            document.writeln("<hr>");
+        </script>
+    </head>
+</html>
