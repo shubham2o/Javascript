@@ -7,21 +7,58 @@
                 console.log("Namaste World");
             }
 
+            console.log("");
+
             // While Loop
             let i = 10;
             while (i >= 10) {
-                console.log("Namaste World");
+                console.log("Namaste JavaScript");
                 i--
             }
+
+            console.log("");
 
             // Do While Loop
             let j = 0;
             do {
-                console.log("Namaste World");
+                console.log("Namaste JS World");
                 j++
             }
             while(j<10);
-        </script>
+
+            console.log("");
+
+            // For...In Loop
+            //Objects
+            let animal = {
+                name : "Zebra",
+                leg : 4
+            };
+
+            for (let key in animal) {
+                console.log(key, animal[key]);
+            }
+
+            console.log("");
+
+            // Arrays
+            let names = [
+                "Rahul",
+                "Neha",
+                "Aman",
+                "Shubham"
+            ];
+
+            for (let index in names) {
+                console.log(index, names[index]);
+            }
+
+            console.log("");
+
+            // For...Of Loop (used only in arrays)
+            for (let index of names) {
+                console.log(index);
+            }        </script>
     </head>
     <body>
     </body>
