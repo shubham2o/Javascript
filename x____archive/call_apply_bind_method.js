@@ -7,6 +7,5 @@
     <title>Call, Apply, Bind method</title>
 </head>
 <body>
-    
 </body>
 </html>
