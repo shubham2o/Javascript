@@ -12,11 +12,23 @@
         <li>Second element</li>
         <li>Third element</li>
     </ul>
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+    </table>
     <script>
         // Root Node
         console.log(document.documentElement);
         console.log(document.body);
         console.log(document.head);
+
+        console.log("");
 
         // Childrens
         console.log(document.body.childNodes);      // This will also include the text indentation which is in between the code
@@ -29,6 +41,8 @@
         const childrensOfBody = Array.from(document.body.children);
         console.log(childrensOfBody);
 
+        console.log("");
+
         // Siblings
         const ulTag = document.body.children[0];
         const firstLi = ulTag.children[0];
@@ -36,6 +50,16 @@
         console.log(ulTag.nextElementSibling);
         console.log(firstLi.nextElementSibling.textContent);
         console.log(secondLi.previousElementSibling.textContent);
+
+        console.log("");
+
+        // Table DOM Manipulation
+        const tableTag = document.body.children[1];
+        console.log(tableTag);
+        console.log(tableTag.tBodies[0].rows[0].cells);
+        console.log(tableTag.tBodies[0].rows[0].textContent);
+        console.log(tableTag.tBodies[0].rows[1].textContent);
+        console.log(tableTag.rows);
     </script>
 </body>
 </html>
