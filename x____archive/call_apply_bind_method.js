@@ -21,12 +21,14 @@ printFullName.call(name2, "Mumbai", "Maharashtra");
 console.log("");
 
 
+
 // apply method
 console.log(`||| APPLY METHOD |||`);
 printFullName.apply(name1, ["Dehradun", "Uttarakhand"]);
 
 printFullName.apply(name2, ["Mumbai", "Maharashtra"]);
 console.log("");
+
 
 
 // bind method
