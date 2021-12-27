@@ -28,6 +28,14 @@
 
         const childrensOfBody = Array.from(document.body.children);
         console.log(childrensOfBody);
+
+        // Siblings
+        const ulTag = document.body.children[0];
+        const firstLi = ulTag.children[0];
+        const secondLi = ulTag.children[1];
+        console.log(ulTag.nextElementSibling);
+        console.log(firstLi.nextElementSibling.textContent);
+        console.log(secondLi.previousElementSibling.textContent);
     </script>
 </body>
 </html>
