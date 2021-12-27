@@ -18,6 +18,16 @@
         console.log(document.body);
         console.log(document.head);
 
+        // Childrens
+        console.log(document.body.childNodes);      // This will also include the text indentation which is in between the code
+        console.log(document.body.children);
+        console.log(document.body.firstElementChild);
+        console.log(document.body.lastElementChild);
+        console.log(document.body.firstChild);
+        console.log(document.body.lastChild);
+
+        const childrensOfBody = Array.from(document.body.children);
+        console.log(childrensOfBody);
     </script>
 </body>
 </html>
