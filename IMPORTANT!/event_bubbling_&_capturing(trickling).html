@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling & Capturing(Trickling)</title>
+    <style>
+        div {
+            min-width: 100px;
+            min-height: 100px;
+            padding: 30px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id = "grandparent"> GRANDPARENT
+        <div id = "parent"> PARENT
+            <div id = "child"> CHILD</div>
+        </div>
+    </div>
+
+    <script src = "event_bubbling_&_capturing(trickling).js"></script>
+</body>
+</html>
