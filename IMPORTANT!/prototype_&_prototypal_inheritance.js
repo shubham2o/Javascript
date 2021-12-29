@@ -33,4 +33,4 @@ console.log(fun.__proto__.mybind());
 console.log(``);
 
 function fun2 () {}
-console.log((fun2.__proto__.mybind()));
+console.log(fun2.__proto__.mybind());
