@@ -17,7 +17,7 @@ console.log(a);
 var a = 100; */
 
 
-/* // OUTPUT - Reference Error
+/* // OUTPUT - Reference Error (Temporal Dead Zone)
 console.log(b);
 let b = 10; */
 
