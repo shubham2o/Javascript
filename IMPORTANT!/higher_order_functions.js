@@ -1,6 +1,7 @@
 /* A function which take another function as an arguement or returns a function from it, 
 is known as HIGHER ORDER FUNCTION.
-A function which is passed in the higher order function is known as CALLBACK FUNCTION. */
+A function which is passed in the higher order function is known as CALLBACK FUNCTION, 
+and this is because functions are first class citizens in JavaScript. */
 
 
 // Function y here is Higher Order Function 
