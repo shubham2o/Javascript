@@ -1,5 +1,9 @@
-// function y here is Higher Order Function 
-// (A function which take another function as an arguement or returns a function from it)
+/* A function which take another function as an arguement or returns a function from it, 
+is known as HIGHER ORDER FUNCTION.
+A function which is passed in the higher order function is known as CALLBACK FUNCTION. */
+
+
+// Function y here is Higher Order Function 
 function x() {
     console.log("Namaste");
 }
@@ -24,7 +28,8 @@ const diameter = function (radius) {
 };
 
 
-// Array.prototype. will be available on all the array you'll see on our codebase.
+/* This Array.prototype.calculate will made calculate function available on all the array 
+you'll see on our codebase. */
 Array.prototype.calculate = function (logic) {
     const output = [];
     for (let i = 0; i < this.length; i++) {
