@@ -24,6 +24,8 @@ var x = 1000;
     // console.log(z);
 }
 // console.log(x);
+// console.log(y);
+// console.log(z);
 
 // -------- let --------
 let q = 1000;
