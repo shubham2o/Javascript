@@ -53,4 +53,6 @@ const w = 1000;
     console.log(v);
     console.log(w);
 }
+console.log(u);
+console.log(v);
 console.log(w);
