@@ -38,7 +38,10 @@ let q = 1000;
     // console.log(q);
     // console.log(r);
 }
+// console.log(p);
 // console.log(q);
+// console.log(r);
+
 
 // -------- const --------
 const w = 1000;
