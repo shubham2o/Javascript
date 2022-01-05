@@ -45,7 +45,6 @@ let q = 1000;
 // console.log(r);
 
 
-
 // -------- const --------
 const w = 1000;
 {
