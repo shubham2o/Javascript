@@ -12,7 +12,6 @@
 // console.log(c);
 
 
-
 // Shadowing 
 // -------- var --------
 var x = 1000;
