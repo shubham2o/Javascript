@@ -7,6 +7,7 @@ let printName = function () {
     console.log(this.firstname + " " + this.lastname);
 }
 
+
 let printMyName = printName.bind(name1);
 printMyName();
 
