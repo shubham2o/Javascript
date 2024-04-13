@@ -10,3 +10,7 @@ body {
   height: 100%;
   font-family: "Montserrat";
 }
+
+h4 {
+  padding: 1vw;
+}
