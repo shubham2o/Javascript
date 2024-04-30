@@ -18,3 +18,9 @@ button {
   color: black;
   font-size: 2vw;
 }
+
+#parent {
+  width: 100%;
+  height: auto;
+  background-color: rgb(250, 192, 171);
+}

@@ -182,3 +182,88 @@ let parameter3 = {
 let bind = xyz.bind(obj, parameter1, "parameter2", parameter3, 9009);
 bind();
 */
+
+// Constructor Function
+/*
+function abcd(age) {
+    this.username = "Shubham";
+    this.age = age;
+    let lastName = "sharma";
+    console.log(lastName, age);
+    this.printMyName = function (city) {
+        console.log(username, lastName, age, city);
+    };
+}
+
+let ans = new abcd(24);
+
+abcd();
+console.log(ans);
+console.log(ans.username);
+console.log(ans.age);
+console.log(ans.lastName);
+ans.printMyName("Delhi");
+*/
+
+// Prototypal Inheritance
+/*
+function abcd(age) {
+    this.username = "Shubham";
+    this.age = age;
+    console.log(age);
+}
+
+abcd.prototype.printMyName = function (city) {
+    console.log(this.username, this.age, city);
+}
+
+let ans = new abcd(24);
+
+console.log(ans);
+console.log(ans.username);
+console.log(ans.age);
+ans.printMyName("Delhi");
+*/
+
+// Closures
+/*
+function abcd(param1) {
+    let a = 9009;
+    console.log(param1);
+    return function (param2) {
+        console.log(a, param2);
+    }
+}
+
+abcd("hi")("shubham");
+// OR
+let ans = abcd("hi");
+ans("shubham");
+
+function timer(param1) {
+    let a = 12;
+    console.log(param1);
+    return setTimeout(function () {
+        console.log(a);
+    }, 5000);
+}
+
+timer("hi");
+*/
+
+// JavaScript Event Delegation
+/*
+let parent = document.getElementById("parent");
+
+parent.addEventListener("click", function (e) {
+    if (e.target.id === "play") {
+        console.log("Play Song");
+    }
+    else if (e.target.id === "pause") {
+        console.log("Pause Song");
+    }
+    else {
+        console.log("Play? or Pause?");
+    }
+})
+*/
