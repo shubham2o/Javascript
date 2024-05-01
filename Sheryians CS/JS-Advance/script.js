@@ -267,3 +267,59 @@ parent.addEventListener("click", function (e) {
     }
 })
 */
+
+// Higher Order Functions (HOF)
+/*
+function abcd(param) {
+    return param();
+}
+
+abcd(function () {
+    console.log("Shubham");
+})
+
+let arr = [1, 2, 3, 4, 5];
+
+arr.forEach(function () {
+
+});
+*/
+
+// Try Catch - Error Handling
+/*
+function divide(a, b) {
+    try {
+        if (b === 0) {
+            throw Error("Cannot divide by 0");
+        }
+        console.log(a / b);
+    }
+    catch (err) {
+        console.error(err);
+    }
+}
+
+divide(100, 5);
+divide(878, 0);
+*/
+
+// Custom Event
+/*
+const evt = new Event("customEvent");
+
+document.getElementById("event-btn")
+    .addEventListener("customEvent", function () {
+        alert("This is made from a custom event");
+    });
+
+document.getElementById("event-btn").dispatchEvent(evt);
+
+let myEvent = new Event("myCustomEvent");
+
+document.getElementById("event-btn")
+    .addEventListener("myCustomEvent", function () {
+        prompt("This is made from a custom event");
+    });
+
+document.getElementById("event-btn").dispatchEvent(myEvent);
+*/
