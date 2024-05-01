@@ -83,7 +83,8 @@ const ans = new add();
 */
 
 // Event Listener
-/* document.querySelector("button").addEventListener("click", function () {
+/*
+document.querySelector("button").addEventListener("click", function () {
     console.log(this); // Object
 });
 */
