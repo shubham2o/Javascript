@@ -97,6 +97,7 @@ getData(`https://randomuser.me/api/`, function (data) {
 */
 
 // async - await
+/*
 async function abcd() {
     console.log("First");
     await fetch(`https://randomuser.me/api/`)
@@ -107,3 +108,58 @@ async function abcd() {
 }
 
 abcd();
+*/
+
+// Callback v/s Promise v/s Async - Await
+// Callback
+/*
+function dataFetcher(url, callback) {
+    console.log("First");
+    fetch(url)
+        .then(raw => raw.json())
+        .then(data => callback(data))
+    console.log("Second");
+}
+
+dataFetcher(`https://randomuser.me/api/`, function (data) {
+    console.log("Third");
+    console.log(data.results[0].email);
+    console.log("Fourth");
+});
+*/
+// Promise
+/*
+new Promise(function (resolve, reject) {
+    console.log("First");
+    axios.get(`https://randomuser.me/api/`)
+        .then(info => {
+            if (info.data.results[0].gender === "male") resolve(info);
+            else reject(info);
+        });
+    console.log("Second");
+}).then(function (info) {
+    console.log("Third");
+    console.log(info.data.results[0].email);
+    console.log("Fourth");
+}).catch(function (info) {
+    console.log("Fifth");
+    console.log(info.data.results[0].phone);
+    console.log("Sixth");
+});
+*/
+
+// Async - Await
+/*
+async function dataFetcher(url, callback) {
+    console.log("First");
+    await axios.get(url)
+        .then(data => callback(data));
+    console.log("Second");
+}
+
+dataFetcher(`https://randomuser.me/api/`, function (data) {
+    console.log("Third");
+    console.log(data.data.results[0].email);
+    console.log("Fourth");
+})
+*/
