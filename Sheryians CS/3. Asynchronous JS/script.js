@@ -163,3 +163,21 @@ dataFetcher(`https://randomuser.me/api/`, function (data) {
     console.log("Fourth");
 })
 */
+
+// Generators
+/*
+function* printNums() {
+    console.log("First");
+    yield 1;
+    console.log("Second");
+    yield 2;
+    console.log("Third");
+    yield 3;
+}
+
+const ans = printNums();
+console.log(ans.next());
+console.log(ans.next());
+console.log(ans.next());
+console.log(ans.next());
+*/
