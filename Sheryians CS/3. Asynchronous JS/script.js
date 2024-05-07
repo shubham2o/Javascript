@@ -181,3 +181,14 @@ console.log(ans.next());
 console.log(ans.next());
 console.log(ans.next());
 */
+
+// Web Workers
+/*
+let nums = Array.from({ length: 100000 }, (_, b) => b + 1);
+let worker = new Worker("worker.js");
+worker.postMessage(nums);
+
+worker.onmessage = function (data) {
+    console.log(data.data);
+}
+*/
