@@ -16,3 +16,13 @@ button {
   height: 7.5vh;
   font-size: 1.8vw;
 }
+
+.makeitred {
+  color: red;
+}
+
+.darkmode {
+  color: white;
+  background-color: black;
+  font-family: "Monument";
+}
